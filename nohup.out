@@ -1,0 +1,786 @@
+2023-07-21 16:39:42.447283: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-21 16:39:51.218557: I tensorflow/core/profiler/lib/profiler_session.cc:126] Profiler session initializing.
+2023-07-21 16:39:51.218625: I tensorflow/core/profiler/lib/profiler_session.cc:141] Profiler session started.
+2023-07-21 16:39:51.240374: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-07-21 16:39:51.247828: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1611] Profiler found 2 GPUs
+2023-07-21 16:39:51.248246: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcupti.so.11.2'; dlerror: libcupti.so.11.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64:/usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64
+2023-07-21 16:39:51.271853: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcupti.so
+2023-07-21 16:39:51.285372: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session tear down.
+2023-07-21 16:39:51.307748: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1743] CUPTI activity buffer flushed
+2023-07-21 16:39:51.376696: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-21 16:39:51.376961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-21 16:39:51.377001: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-21 16:39:51.383803: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-07-21 16:39:51.383925: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-07-21 16:39:51.467072: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2023-07-21 16:39:51.527713: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2023-07-21 16:39:51.528835: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2023-07-21 16:39:51.530087: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2023-07-21 16:39:51.530299: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-07-21 16:39:51.543613: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2023-07-21 16:39:51.544163: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-07-21 16:39:51.812527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-21 16:39:51.812790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-21 16:39:51.813381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2023-07-21 16:39:51.837073: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-21 16:39:55.458034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-07-21 16:39:55.458107: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2023-07-21 16:39:55.458121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2023-07-21 16:39:55.458129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2023-07-21 16:39:55.460046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1034 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A4000, pci bus id: 0000:3b:00.0, compute capability: 8.6)
+2023-07-21 16:39:55.493646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 11617 MB memory) -> physical GPU (device: 1, name: NVIDIA RTX A4000, pci bus id: 0000:d8:00.0, compute capability: 8.6)
+Parse Params file here from  config/manhattan32.json  and pass into main
+Model: "model_6"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+boolean_map_input (InputLayer)  [(None, 63, 63, 4)]  0                                            
+__________________________________________________________________________________________________
+tf.cast (TFOpLambda)            (None, 63, 63, 4)    0           boolean_map_input[0][0]          
+__________________________________________________________________________________________________
+float_map_input (InputLayer)    [(None, 63, 63, 2)]  0                                            
+__________________________________________________________________________________________________
+tf.concat (TFOpLambda)          (None, 63, 63, 6)    0           tf.cast[0][0]                    
+                                                                 float_map_input[0][0]            
+__________________________________________________________________________________________________
+average_pooling2d (AveragePooli (None, 21, 21, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.image.central_crop (TFOpLamb (None, 17, 17, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.stop_gradient (TFOpLambda)   (None, 21, 21, 6)    0           average_pooling2d[0][0]          
+__________________________________________________________________________________________________
+tf.stop_gradient_1 (TFOpLambda) (None, 17, 17, 6)    0           tf.image.central_crop[0][0]      
+__________________________________________________________________________________________________
+global_conv_1 (Conv2D)          (None, 17, 17, 16)   2416        tf.stop_gradient[0][0]           
+__________________________________________________________________________________________________
+local_conv_1 (Conv2D)           (None, 13, 13, 16)   2416        tf.stop_gradient_1[0][0]         
+__________________________________________________________________________________________________
+global_conv_2 (Conv2D)          (None, 13, 13, 16)   6416        global_conv_1[0][0]              
+__________________________________________________________________________________________________
+local_conv_2 (Conv2D)           (None, 9, 9, 16)     6416        local_conv_1[0][0]               
+__________________________________________________________________________________________________
+global_flatten (Flatten)        (None, 2704)         0           global_conv_2[0][0]              
+__________________________________________________________________________________________________
+local_flatten (Flatten)         (None, 1296)         0           local_conv_2[0][0]               
+__________________________________________________________________________________________________
+concat_flatten (Concatenate)    (None, 4000)         0           global_flatten[0][0]             
+                                                                 local_flatten[0][0]              
+__________________________________________________________________________________________________
+scalars_input (InputLayer)      [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+termination_input (InputLayer)  [(None,)]            0                                            
+__________________________________________________________________________________________________
+concat (Concatenate)            (None, 4001)         0           concat_flatten[0][0]             
+                                                                 scalars_input[0][0]              
+__________________________________________________________________________________________________
+tf.math.logical_not (TFOpLambda (None,)              0           termination_input[0][0]          
+__________________________________________________________________________________________________
+hidden_layer_all_0 (Dense)      (None, 256)          1024512     concat[0][0]                     
+__________________________________________________________________________________________________
+tf.cast_1 (TFOpLambda)          (None,)              0           tf.math.logical_not[0][0]        
+__________________________________________________________________________________________________
+hidden_layer_all_1 (Dense)      (None, 256)          65792       hidden_layer_all_0[0][0]         
+__________________________________________________________________________________________________
+q_star_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_2 (TFOpLambda) (None,)              0           tf.cast_1[0][0]                  
+__________________________________________________________________________________________________
+hidden_layer_all_2 (Dense)      (None, 256)          65792       hidden_layer_all_1[0][0]         
+__________________________________________________________________________________________________
+reward_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_3 (TFOpLambda) (None,)              0           q_star_input[0][0]               
+                                                                 tf.math.multiply_2[0][0]         
+__________________________________________________________________________________________________
+action_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+output_layer (Dense)            (None, 6)            1542        hidden_layer_all_2[0][0]         
+__________________________________________________________________________________________________
+tf.math.add (TFOpLambda)        (None,)              0           reward_input[0][0]               
+                                                                 tf.math.multiply_3[0][0]         
+__________________________________________________________________________________________________
+tf.one_hot_2 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.expand_dims (TFOpLambda)     (None, 1)            0           tf.math.add[0][0]                
+__________________________________________________________________________________________________
+tf.one_hot_1 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_1 (TFOpLambda) (None, 6)            0           output_layer[0][0]               
+                                                                 tf.one_hot_2[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_4 (TFOpLambda) (None, 6)            0           tf.expand_dims[0][0]             
+                                                                 tf.one_hot_1[0][0]               
+__________________________________________________________________________________________________
+tf.stop_gradient_4 (TFOpLambda) (None, 6)            0           tf.math.multiply_1[0][0]         
+__________________________________________________________________________________________________  0%|          | 0/25000.0 [00:00<?, ?it/s]  0%|          | 53/25000.0 [00:00<01:58, 210.98it/s]  0%|          | 104/25000.0 [00:00<01:46, 234.75it/s]  1%|          | 204/25000.0 [00:00<01:36, 255.71it/s]  1%|          | 295/25000.0 [00:01<01:33, 263.93it/s]  1%|▏         | 349/25000.0 [00:01<01:40, 244.44it/s]  2%|▏         | 404/25000.0 [00:01<01:33, 263.63it/s]  2%|▏         | 508/25000.0 [00:01<01:33, 261.88it/s]  2%|▏         | 576/25000.0 [00:02<01:45, 231.19it/s]  3%|▎         | 655/25000.0 [00:02<01:46, 229.00it/s]  3%|▎         | 788/25000.0 [00:03<01:46, 226.29it/s]  3%|▎         | 822/25000.0 [00:03<01:39, 244.20it/s]  4%|▎         | 879/25000.0 [00:03<01:32, 261.20it/s]  4%|▍         | 1006/25000.0 [00:04<01:40, 237.62it/s]  4%|▍         | 1055/25000.0 [00:04<01:35, 250.66it/s]  5%|▍         | 1126/25000.0 [00:04<01:35, 250.58it/s]  5%|▍         | 1195/25000.0 [00:04<01:32, 258.41it/s]  5%|▍         | 1226/25000.0 [00:05<01:40, 237.26it/s]  5%|▌         | 1373/25000.0 [00:05<01:34, 251.24it/s]  6%|▌         | 1406/25000.0 [00:05<01:38, 240.01it/s]  6%|▌         | 1494/25000.0 [00:06<01:43, 226.53it/s]  6%|▌         | 1523/25000.0 [00:06<01:49, 215.14it/s]  6%|▋         | 1572/25000.0 [00:06<01:45, 222.19it/s]  7%|▋         | 1673/25000.0 [00:06<01:47, 216.79it/s]  7%|▋         | 1701/25000.0 [00:07<01:44, 222.57it/s]  7%|▋         | 1725/25000.0 [00:07<01:51, 208.56it/s]  7%|▋         | 1842/25000.0 [00:07<01:38, 236.18it/s]  8%|▊         | 1907/25000.0 [00:07<01:29, 259.39it/s]  8%|▊         | 1986/25000.0 [00:07<01:24, 270.85it/s]  8%|▊         | 2069/25000.0 [00:08<01:48, 210.65it/s]  9%|▊         | 2157/25000.0 [00:08<01:41, 225.18it/s]  9%|▉         | 2275/25000.0 [00:09<01:31, 249.12it/s]  9%|▉         | 2349/25000.0 [00:09<01:30, 248.99it/s] 10%|█         | 2542/25000.0 [00:10<01:21, 274.01it/s] 11%|█         | 2652/25000.0 [00:10<01:32, 242.67it/s] 11%|█         | 2763/25000.0 [00:11<01:27, 254.97it/s] 12%|█▏        | 2877/25000.0 [00:11<01:27, 251.92it/s] 12%|█▏        | 3017/25000.0 [00:12<01:31, 240.10it/s] 13%|█▎        | 3132/25000.0 [00:12<01:37, 224.69it/s] 13%|█▎        | 3157/25000.0 [00:12<01:38, 221.44it/s] 13%|█▎        | 3184/25000.0 [00:13<01:37, 223.59it/s] 13%|█▎        | 3223/25000.0 [00:13<02:13, 163.49it/s] 13%|█▎        | 3361/25000.0 [00:14<02:05, 172.23it/s] 14%|█▍        | 3443/25000.0 [00:14<01:50, 194.57it/s] 14%|█▍        | 3479/25000.0 [00:14<01:45, 204.31it/s] 14%|█▍        | 3502/25000.0 [00:14<01:42, 209.15it/s] 14%|█▍        | 3563/25000.0 [00:14<01:44, 204.33it/s] 15%|█▍        | 3694/25000.0 [00:15<01:35, 223.46it/s] 15%|█▌        | 3810/25000.0 [00:16<01:39, 214.01it/s] 15%|█▌        | 3854/25000.0 [00:16<01:32, 229.12it/s] 16%|█▌        | 3888/25000.0 [00:16<01:26, 244.46it/s] 16%|█▌        | 3958/25000.0 [00:16<01:21, 257.75it/s] 16%|█▌        | 4007/25000.0 [00:16<01:28, 236.25it/s] 16%|█▌        | 4036/25000.0 [00:16<01:31, 230.14it/s] 17%|█▋        | 4139/25000.0 [00:17<01:38, 212.47it/s] 17%|█▋        | 4200/25000.0 [00:17<01:41, 205.42it/s] 17%|█▋        | 4328/25000.0 [00:18<01:31, 226.17it/s] 18%|█▊        | 4413/25000.0 [00:18<01:28, 231.99it/s] 18%|█▊        | 4442/25000.0 [00:18<01:31, 224.75it/s] 18%|█▊        | 4591/25000.0 [00:19<01:37, 208.39it/s] 19%|█▊        | 4646/25000.0 [00:19<01:50, 184.81it/s] 19%|█▉        | 4732/25000.0 [00:20<01:41, 200.01it/s] 19%|█▉        | 4769/25000.0 [00:20<01:37, 207.43it/s] 20%|█▉        | 4899/25000.0 [00:21<01:34, 211.96it/s] 20%|█▉        | 4992/25000.0 [00:21<01:31, 218.54it/s] 20%|██        | 5100/25000.0 [00:21<01:35, 208.46it/s] 21%|██        | 5223/25000.0 [00:22<01:35, 206.73it/s] 21%|██▏       | 5357/25000.0 [00:23<01:36, 204.13it/s] 22%|██▏       | 5420/25000.0 [00:23<01:41, 193.31it/s] 22%|██▏       | 5448/25000.0 [00:23<01:35, 205.12it/s] 22%|██▏       | 5505/25000.0 [00:24<01:41, 192.86it/s] 23%|██▎       | 5644/25000.0 [00:24<01:31, 211.17it/s]2023-07-21 16:41:08.849026: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-21 16:41:11.508646: I tensorflow/core/profiler/lib/profiler_session.cc:126] Profiler session initializing.
+2023-07-21 16:41:11.508694: I tensorflow/core/profiler/lib/profiler_session.cc:141] Profiler session started.
+2023-07-21 16:41:11.509877: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-07-21 16:41:11.517292: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1611] Profiler found 1 GPUs
+2023-07-21 16:41:11.518012: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcupti.so.11.2'; dlerror: libcupti.so.11.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64:/usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64
+2023-07-21 16:41:11.519950: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcupti.so
+2023-07-21 16:41:11.525346: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session tear down.
+2023-07-21 16:41:11.525660: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1743] CUPTI activity buffer flushed
+2023-07-21 16:41:11.528246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-21 16:41:11.528301: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-21 16:41:11.535518: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-07-21 16:41:11.535604: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-07-21 16:41:11.537380: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2023-07-21 16:41:11.537785: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2023-07-21 16:41:11.538614: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2023-07-21 16:41:11.540813: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2023-07-21 16:41:11.541002: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-07-21 16:41:11.541501: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-07-21 16:41:11.541961: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-07-21 16:41:11.546281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-21 16:41:11.546661: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-07-21 16:41:11.546706: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-21 16:41:12.395253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-07-21 16:41:12.395329: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2023-07-21 16:41:12.395347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2023-07-21 16:41:12.396662: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11617 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A4000, pci bus id: 0000:d8:00.0, compute capability: 8.6)
+Parse Params file here from  config/manhattan32.json  and pass into main
+Model: "model_6"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+boolean_map_input (InputLayer)  [(None, 63, 63, 4)]  0                                            
+__________________________________________________________________________________________________
+tf.cast (TFOpLambda)            (None, 63, 63, 4)    0           boolean_map_input[0][0]          
+__________________________________________________________________________________________________
+float_map_input (InputLayer)    [(None, 63, 63, 2)]  0                                            
+__________________________________________________________________________________________________
+tf.concat (TFOpLambda)          (None, 63, 63, 6)    0           tf.cast[0][0]                    
+                                                                 float_map_input[0][0]            
+__________________________________________________________________________________________________
+average_pooling2d (AveragePooli (None, 21, 21, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.image.central_crop (TFOpLamb (None, 17, 17, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.stop_gradient (TFOpLambda)   (None, 21, 21, 6)    0           average_pooling2d[0][0]          
+__________________________________________________________________________________________________
+tf.stop_gradient_1 (TFOpLambda) (None, 17, 17, 6)    0           tf.image.central_crop[0][0]      
+__________________________________________________________________________________________________
+global_conv_1 (Conv2D)          (None, 17, 17, 16)   2416        tf.stop_gradient[0][0]           
+__________________________________________________________________________________________________
+local_conv_1 (Conv2D)           (None, 13, 13, 16)   2416        tf.stop_gradient_1[0][0]         
+__________________________________________________________________________________________________
+global_conv_2 (Conv2D)          (None, 13, 13, 16)   6416        global_conv_1[0][0]              
+__________________________________________________________________________________________________
+local_conv_2 (Conv2D)           (None, 9, 9, 16)     6416        local_conv_1[0][0]               
+__________________________________________________________________________________________________
+global_flatten (Flatten)        (None, 2704)         0           global_conv_2[0][0]              
+__________________________________________________________________________________________________
+local_flatten (Flatten)         (None, 1296)         0           local_conv_2[0][0]               
+__________________________________________________________________________________________________
+concat_flatten (Concatenate)    (None, 4000)         0           global_flatten[0][0]             
+                                                                 local_flatten[0][0]              
+__________________________________________________________________________________________________
+scalars_input (InputLayer)      [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+termination_input (InputLayer)  [(None,)]            0                                            
+__________________________________________________________________________________________________
+concat (Concatenate)            (None, 4001)         0           concat_flatten[0][0]             
+                                                                 scalars_input[0][0]              
+__________________________________________________________________________________________________
+tf.math.logical_not (TFOpLambda (None,)              0           termination_input[0][0]          
+__________________________________________________________________________________________________
+hidden_layer_all_0 (Dense)      (None, 256)          1024512     concat[0][0]                     
+__________________________________________________________________________________________________
+tf.cast_1 (TFOpLambda)          (None,)              0           tf.math.logical_not[0][0]        
+__________________________________________________________________________________________________
+hidden_layer_all_1 (Dense)      (None, 256)          65792       hidden_layer_all_0[0][0]         
+__________________________________________________________________________________________________
+q_star_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_2 (TFOpLambda) (None,)              0           tf.cast_1[0][0]                  
+__________________________________________________________________________________________________
+hidden_layer_all_2 (Dense)      (None, 256)          65792       hidden_layer_all_1[0][0]         
+__________________________________________________________________________________________________
+reward_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_3 (TFOpLambda) (None,)              0           q_star_input[0][0]               
+                                                                 tf.math.multiply_2[0][0]         
+__________________________________________________________________________________________________
+action_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+output_layer (Dense)            (None, 6)            1542        hidden_layer_all_2[0][0]         
+__________________________________________________________________________________________________
+tf.math.add (TFOpLambda)        (None,)              0           reward_input[0][0]               
+                                                                 tf.math.multiply_3[0][0]         
+__________________________________________________________________________________________________
+tf.one_hot_2 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.expand_dims (TFOpLambda)     (None, 1)            0           tf.math.add[0][0]                
+__________________________________________________________________________________________________
+tf.one_hot_1 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_1 (TFOpLambda) (None, 6)            0           output_layer[0][0]               
+                                                                 tf.one_hot_2[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_4 (TFOpLambda) (None, 6)            0           tf.expand_dims[0][0]             
+                                                                 tf.one_hot_1[0][0]               
+__________________________________________________________________________________________________
+tf.stop_gradient_4 (TFOpLambda) (None, 6)            0           tf.math.multiply_1[0][0]         
+__________________________________________________________________________________________________  0%|          | 0/25000.0 [00:00<?, ?it/s]  0%|          | 58/25000.0 [00:00<01:52, 222.41it/s]  1%|          | 198/25000.0 [00:00<01:47, 231.28it/s]  1%|          | 246/25000.0 [00:00<01:36, 256.37it/s]  1%|          | 291/25000.0 [00:01<01:37, 253.21it/s]  1%|▏         | 318/25000.0 [00:01<01:43, 238.52it/s]  1%|▏         | 357/25000.0 [00:01<01:41, 243.83it/s]  2%|▏         | 433/25000.0 [00:01<01:31, 269.07it/s]  2%|▏         | 483/25000.0 [00:01<01:28, 277.94it/s]  2%|▏         | 540/25000.0 [00:02<01:36, 254.19it/s]  3%|▎         | 626/25000.0 [00:02<01:39, 245.42it/s]  3%|▎         | 692/25000.0 [00:02<01:42, 236.54it/s]  3%|▎         | 835/25000.0 [00:03<01:51, 216.81it/s]  4%|▎         | 897/25000.0 [00:03<01:54, 211.10it/s]  4%|▎         | 928/25000.0 [00:03<01:44, 230.88it/s]  4%|▍         | 1010/25000.0 [00:04<01:37, 245.33it/s]  4%|▍         | 1037/25000.0 [00:04<01:40, 239.37it/s]  4%|▍         | 1069/25000.0 [00:04<01:37, 246.23it/s]  5%|▍         | 1143/25000.0 [00:04<01:41, 234.13it/s]  5%|▌         | 1270/25000.0 [00:05<01:33, 252.80it/s]  5%|▌         | 1352/25000.0 [00:05<01:29, 263.18it/s]  6%|▌         | 1423/25000.0 [00:05<01:29, 263.87it/s]  6%|▌         | 1474/25000.0 [00:06<01:37, 241.05it/s]  6%|▋         | 1589/25000.0 [00:06<01:37, 238.98it/s]  7%|▋         | 1660/25000.0 [00:06<01:26, 269.74it/s]  7%|▋         | 1761/25000.0 [00:07<01:21, 284.78it/s]  7%|▋         | 1830/25000.0 [00:07<01:17, 300.66it/s]  8%|▊         | 1885/25000.0 [00:07<01:11, 322.62it/s]  8%|▊         | 2013/25000.0 [00:08<01:24, 272.35it/s]  8%|▊         | 2080/25000.0 [00:08<01:33, 245.43it/s]  9%|▊         | 2126/25000.0 [00:08<01:24, 270.22it/s]  9%|▊         | 2181/25000.0 [00:08<01:22, 277.72it/s]  9%|▉         | 2244/25000.0 [00:08<01:21, 278.70it/s]  9%|▉         | 2292/25000.0 [00:09<01:30, 250.16it/s]  9%|▉         | 2344/25000.0 [00:09<01:28, 255.44it/s] 10%|▉         | 2469/25000.0 [00:09<01:21, 277.35it/s] 10%|█         | 2503/25000.0 [00:09<01:24, 266.98it/s] 10%|█         | 2595/25000.0 [00:10<01:26, 259.55it/s] 11%|█         | 2636/25000.0 [00:10<01:28, 252.27it/s] 11%|█         | 2769/25000.0 [00:10<01:22, 271.08it/s] 11%|█▏        | 2824/25000.0 [00:11<01:28, 249.82it/s] 12%|█▏        | 2913/25000.0 [00:11<01:32, 238.42it/s] 12%|█▏        | 2991/25000.0 [00:11<01:32, 238.87it/s] 12%|█▏        | 3083/25000.0 [00:12<01:34, 230.98it/s] 13%|█▎        | 3228/25000.0 [00:12<01:31, 237.40it/s] 14%|█▎        | 3390/25000.0 [00:13<01:21, 264.70it/s] 14%|█▍        | 3571/25000.0 [00:13<01:23, 255.75it/s] 15%|█▍        | 3647/25000.0 [00:14<01:27, 242.92it/s] 15%|█▍        | 3689/25000.0 [00:14<01:24, 250.80it/s] 15%|█▌        | 3825/25000.0 [00:15<01:28, 238.59it/s] 16%|█▌        | 3910/25000.0 [00:15<01:32, 228.48it/s] 16%|█▌        | 3972/25000.0 [00:15<01:29, 234.02it/s] 16%|█▋        | 4094/25000.0 [00:16<01:20, 258.82it/s] 17%|█▋        | 4184/25000.0 [00:16<01:20, 259.82it/s] 17%|█▋        | 4256/25000.0 [00:16<01:12, 287.52it/s] 17%|█▋        | 4327/25000.0 [00:17<01:33, 220.00it/s] 18%|█▊        | 4486/25000.0 [00:17<01:25, 239.35it/s] 18%|█▊        | 4566/25000.0 [00:17<01:19, 256.69it/s] 19%|█▊        | 4626/25000.0 [00:18<01:22, 247.64it/s] 19%|█▉        | 4768/25000.0 [00:18<01:22, 245.29it/s] 19%|█▉        | 4804/25000.0 [00:18<01:26, 232.45it/s] 20%|█▉        | 4894/25000.0 [00:19<01:25, 235.87it/s] 20%|█▉        | 4983/25000.0 [00:19<01:18, 254.80it/s] 20%|██        | 5020/25000.0 [00:19<01:16, 260.39it/s] 20%|██        | 5118/25000.0 [00:20<01:13, 268.94it/s] 21%|██        | 5201/25000.0 [00:20<01:24, 233.25it/s] 21%|██        | 5296/25000.0 [00:21<01:29, 219.29it/s] 21%|██▏       | 5333/25000.0 [00:21<01:30, 216.20it/s] 21%|██▏       | 5366/25000.0 [00:21<01:27, 223.74it/s] 22%|██▏       | 5390/25000.0 [00:21<01:27, 225.05it/s] 22%|██▏       | 5489/25000.0 [00:21<01:25, 228.33it/s] 22%|██▏       | 5546/25000.0 [00:22<01:19, 244.54it/s] 22%|██▏       | 5575/25000.0 [00:22<01:15, 255.84it/s] 23%|██▎       | 5657/25000.0 [00:22<01:18, 247.60it/s] 23%|██▎       | 5683/25000.0 [00:22<01:22, 234.97it/s] 23%|██▎       | 5744/25000.0 [00:22<01:17, 249.18it/s] 23%|██▎       | 5804/25000.0 [00:23<01:42, 186.59it/s] 24%|██▎       | 5932/25000.0 [00:23<01:36, 196.68it/s] 24%|██▍       | 6039/25000.0 [00:24<01:26, 218.35it/s] 25%|██▍       | 6132/25000.0 [00:24<01:24, 222.05it/s] 25%|██▍       | 6160/25000.0 [00:24<01:21, 232.27it/s] 25%|██▍       | 6227/25000.0 [00:25<01:29, 209.05it/s] 25%|██▌       | 6250/25000.0 [00:25<01:33, 201.01it/s] 25%|██▌       | 6276/25000.0 [00:25<01:26, 215.27it/s] 26%|██▌       | 6410/25000.0 [00:25<01:18, 235.68it/s] 26%|██▌       | 6505/25000.0 [00:26<01:17, 240.15it/s] 27%|██▋       | 6670/25000.0 [00:27<01:21, 224.59it/s] 27%|██▋       | 6740/25000.0 [00:27<01:22, 222.57it/s] 27%|██▋       | 6822/25000.0 [00:27<01:21, 222.80it/s] 27%|██▋       | 6865/25000.0 [00:28<01:22, 219.18it/s] 28%|██▊       | 6889/25000.0 [00:28<01:23, 217.43it/s] 28%|██▊       | 6952/25000.0 [00:28<01:24, 213.02it/s] 28%|██▊       | 7011/25000.0 [00:28<01:17, 230.76it/s] 28%|██▊       | 7082/25000.0 [00:29<01:24, 212.23it/s] 28%|██▊       | 7125/25000.0 [00:29<01:20, 221.67it/s] 29%|██▊       | 7176/25000.0 [00:29<01:25, 208.55it/s] 29%|██▉       | 7253/25000.0 [00:29<01:22, 213.98it/s] 29%|██▉       | 7282/25000.0 [00:29<01:18, 226.84it/s] 29%|██▉       | 7370/25000.0 [00:30<01:17, 226.66it/s] 30%|██▉       | 7407/25000.0 [00:30<01:13, 239.38it/s] 30%|███       | 7546/25000.0 [00:31<01:12, 240.76it/s] 31%|███       | 7646/25000.0 [00:31<01:10, 247.16it/s] 31%|███       | 7671/25000.0 [00:31<01:17, 224.29it/s] 31%|███       | 7744/25000.0 [00:31<01:16, 224.31it/s] 31%|███▏      | 7848/25000.0 [00:32<01:32, 184.96it/s] 32%|███▏      | 7878/25000.0 [00:32<01:24, 202.59it/s] 32%|███▏      | 7913/25000.0 [00:32<01:20, 211.74it/s] 32%|███▏      | 8061/25000.0 [00:33<01:22, 205.91it/s] 33%|███▎      | 8129/25000.0 [00:33<01:16, 220.12it/s] 33%|███▎      | 8188/25000.0 [00:34<01:13, 228.72it/s] 33%|███▎      | 8232/25000.0 [00:34<01:16, 218.50it/s] 33%|███▎      | 8262/25000.0 [00:34<01:15, 222.80it/s] 33%|███▎      | 8336/25000.0 [00:34<01:06, 251.87it/s] 34%|███▎      | 8420/25000.0 [00:35<01:15, 220.96it/s] 34%|███▍      | 8552/25000.0 [00:35<01:16, 215.79it/s] 35%|███▍      | 8650/25000.0 [00:36<01:17, 211.80it/s] 35%|███▍      | 8749/25000.0 [00:36<01:07, 239.72it/s] 35%|███▌      | 8833/25000.0 [00:37<01:08, 234.43it/s] 36%|███▌      | 8897/25000.0 [00:37<01:09, 231.78it/s] 36%|███▌      | 8974/25000.0 [00:37<01:03, 250.67it/s] 36%|███▌      | 9045/25000.0 [00:37<01:09, 229.30it/s] 37%|███▋      | 9161/25000.0 [00:38<01:06, 237.39it/s] 37%|███▋      | 9264/25000.0 [00:38<01:10, 224.73it/s] 37%|███▋      | 9297/25000.0 [00:39<01:11, 219.58it/s] 37%|███▋      | 9332/25000.0 [00:39<01:09, 225.83it/s] 38%|███▊      | 9417/25000.0 [00:39<01:13, 211.16it/s] 38%|███▊      | 9511/25000.0 [00:40<01:12, 214.29it/s] 39%|███▊      | 9628/25000.0 [00:40<01:10, 217.79it/s] 39%|███▉      | 9785/25000.0 [00:41<01:01, 246.60it/s] 39%|███▉      | 9827/25000.0 [00:41<00:58, 259.17it/s] 40%|███▉      | 9921/25000.0 [00:41<00:55, 272.66it/s] 40%|████      | 10020/25000.0 [00:41<00:59, 252.48it/s] 40%|████      | 10063/25000.0 [00:42<01:37, 152.97it/s] 40%|████      | 10084/25000.0 [00:42<01:31, 163.70it/s] 40%|████      | 10119/25000.0 [00:42<01:18, 189.31it/s] 41%|████      | 10243/25000.0 [00:43<01:08, 216.56it/s] 41%|████▏     | 10313/25000.0 [00:43<01:07, 216.22it/s] 42%|████▏     | 10420/25000.0 [00:44<01:12, 200.11it/s] 42%|████▏     | 10466/25000.0 [00:44<01:09, 209.77it/s] 42%|████▏     | 10617/25000.0 [00:44<01:05, 220.88it/s] 43%|████▎     | 10771/25000.0 [00:45<01:03, 223.29it/s] 44%|████▎     | 10900/25000.0 [00:46<01:03, 220.81it/s] 44%|████▎     | 10925/25000.0 [00:46<01:06, 212.73it/s]2023-07-24 01:31:06.729409: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:31:08.418830: I tensorflow/core/profiler/lib/profiler_session.cc:126] Profiler session initializing.
+2023-07-24 01:31:08.418869: I tensorflow/core/profiler/lib/profiler_session.cc:141] Profiler session started.
+2023-07-24 01:31:08.419757: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-07-24 01:31:08.435262: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1611] Profiler found 1 GPUs
+2023-07-24 01:31:08.435617: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcupti.so.11.2'; dlerror: libcupti.so.11.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64:/usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64
+2023-07-24 01:31:08.436490: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcupti.so
+2023-07-24 01:31:08.438784: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session tear down.
+2023-07-24 01:31:08.438955: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1743] CUPTI activity buffer flushed
+2023-07-24 01:31:08.440301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-24 01:31:08.440328: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:31:08.445190: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-07-24 01:31:08.445244: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-07-24 01:31:08.447349: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2023-07-24 01:31:08.447651: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2023-07-24 01:31:08.448315: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2023-07-24 01:31:08.449222: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2023-07-24 01:31:08.449360: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-07-24 01:31:08.449705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-07-24 01:31:08.450062: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-07-24 01:31:08.452737: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-24 01:31:08.453019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-07-24 01:31:08.453055: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:31:09.062736: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-07-24 01:31:09.062790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2023-07-24 01:31:09.062798: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2023-07-24 01:31:09.063392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14253 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A4000, pci bus id: 0000:d8:00.0, compute capability: 8.6)
+Parse Params file here from  config/manhattan32.json  and pass into main
+[[[  0   0   0]
+  [  0   0   0]
+  [  0   0   0]
+  ...
+  [  0   0   0]
+  [  0 255   0]
+  [  0 255   0]]
+
+ [[  0   0   0]
+  [  0   0   0]
+  [  0   0 255]
+  ...
+  [  0   0   0]
+  [  0 255   0]
+  [  0 255   0]]
+
+ [[  0   0   0]
+  [  0   0   0]
+  [  0   0 255]
+  ...
+  [  0   0   0]
+  [  0 255   0]
+  [  0 255   0]]
+
+ ...
+
+ [[  0   0   0]
+  [  0   0   0]
+  [  0   0   0]
+  ...
+  [  0   0   0]
+  [  0   0   0]
+  [  0   0   0]]
+
+ [[  0 255   0]
+  [  0 255   0]
+  [  0 255   0]
+  ...
+  [  0   0   0]
+  [255 255   0]
+  [255 255   0]]
+
+ [[  0 255   0]
+  [  0 255   0]
+  [  0 255   0]
+  ...
+  [  0   0   0]
+  [255 255   0]
+  [255 255   0]]]
+Model: "model_6"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+boolean_map_input (InputLayer)  [(None, 63, 63, 4)]  0                                            
+__________________________________________________________________________________________________
+tf.cast (TFOpLambda)            (None, 63, 63, 4)    0           boolean_map_input[0][0]          
+__________________________________________________________________________________________________
+float_map_input (InputLayer)    [(None, 63, 63, 2)]  0                                            
+__________________________________________________________________________________________________
+tf.concat (TFOpLambda)          (None, 63, 63, 6)    0           tf.cast[0][0]                    
+                                                                 float_map_input[0][0]            
+__________________________________________________________________________________________________
+average_pooling2d (AveragePooli (None, 21, 21, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.image.central_crop (TFOpLamb (None, 17, 17, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.stop_gradient (TFOpLambda)   (None, 21, 21, 6)    0           average_pooling2d[0][0]          
+__________________________________________________________________________________________________
+tf.stop_gradient_1 (TFOpLambda) (None, 17, 17, 6)    0           tf.image.central_crop[0][0]      
+__________________________________________________________________________________________________
+global_conv_1 (Conv2D)          (None, 17, 17, 16)   2416        tf.stop_gradient[0][0]           
+__________________________________________________________________________________________________
+local_conv_1 (Conv2D)           (None, 13, 13, 16)   2416        tf.stop_gradient_1[0][0]         
+__________________________________________________________________________________________________
+global_conv_2 (Conv2D)          (None, 13, 13, 16)   6416        global_conv_1[0][0]              
+__________________________________________________________________________________________________
+local_conv_2 (Conv2D)           (None, 9, 9, 16)     6416        local_conv_1[0][0]               
+__________________________________________________________________________________________________
+global_flatten (Flatten)        (None, 2704)         0           global_conv_2[0][0]              
+__________________________________________________________________________________________________
+local_flatten (Flatten)         (None, 1296)         0           local_conv_2[0][0]               
+__________________________________________________________________________________________________
+concat_flatten (Concatenate)    (None, 4000)         0           global_flatten[0][0]             
+                                                                 local_flatten[0][0]              
+__________________________________________________________________________________________________
+scalars_input (InputLayer)      [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+termination_input (InputLayer)  [(None,)]            0                                            
+__________________________________________________________________________________________________
+concat (Concatenate)            (None, 4001)         0           concat_flatten[0][0]             
+                                                                 scalars_input[0][0]              
+__________________________________________________________________________________________________
+tf.math.logical_not (TFOpLambda (None,)              0           termination_input[0][0]          
+__________________________________________________________________________________________________
+hidden_layer_all_0 (Dense)      (None, 256)          1024512     concat[0][0]                     
+__________________________________________________________________________________________________
+tf.cast_1 (TFOpLambda)          (None,)              0           tf.math.logical_not[0][0]        
+__________________________________________________________________________________________________
+hidden_layer_all_1 (Dense)      (None, 256)          65792       hidden_layer_all_0[0][0]         
+__________________________________________________________________________________________________
+q_star_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_2 (TFOpLambda) (None,)              0           tf.cast_1[0][0]                  
+__________________________________________________________________________________________________
+hidden_layer_all_2 (Dense)      (None, 256)          65792       hidden_layer_all_1[0][0]         
+__________________________________________________________________________________________________
+reward_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_3 (TFOpLambda) (None,)              0           q_star_input[0][0]               
+                                                                 tf.math.multiply_2[0][0]         
+__________________________________________________________________________________________________
+action_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+output_layer (Dense)            (None, 6)            1542        hidden_layer_all_2[0][0]         
+__________________________________________________________________________________________________
+tf.math.add (TFOpLambda)        (None,)              0           reward_input[0][0]               
+                                                                 tf.math.multiply_3[0][0]         
+__________________________________________________________________________________________________
+tf.one_hot_2 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.expand_dims (TFOpLambda)     (None, 1)            0           tf.math.add[0][0]                
+__________________________________________________________________________________________________
+tf.one_hot_1 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_1 (TFOpLambda) (None, 6)            0           output_layer[0][0]               
+                                                                 tf.one_hot_2[0][0]                 0%|          | 0/25000.0 [00:00<?, ?it/s]  1%|          | 211/25000.0 [00:00<00:46, 534.36it/s]  1%|▏         | 338/25000.0 [00:00<00:49, 501.41it/s]  2%|▏         | 430/25000.0 [00:00<00:50, 489.99it/s]  2%|▏         | 537/25000.0 [00:01<01:00, 407.51it/s]  3%|▎         | 671/25000.0 [00:01<00:56, 427.00it/s]  3%|▎         | 744/25000.0 [00:01<00:55, 439.06it/s]  3%|▎         | 864/25000.0 [00:01<00:51, 472.64it/s]  4%|▍         | 996/25000.0 [00:02<01:02, 381.18it/s]  4%|▍         | 1108/25000.0 [00:02<01:03, 373.89it/s]  5%|▍         | 1147/25000.0 [00:02<01:08, 349.54it/s]  5%|▌         | 1253/25000.0 [00:03<01:08, 346.00it/s]  6%|▌         | 1414/25000.0 [00:03<01:03, 374.09it/s]  6%|▌         | 1544/25000.0 [00:03<01:07, 349.08it/s]  6%|▋         | 1598/25000.0 [00:04<01:07, 344.36it/s]  7%|▋         | 1683/25000.0 [00:04<01:07, 347.42it/s]  7%|▋         | 1786/25000.0 [00:04<01:03, 363.86it/s]  7%|▋         | 1837/25000.0 [00:04<01:01, 377.71it/s]  8%|▊         | 1985/25000.0 [00:05<01:02, 365.81it/s]  8%|▊         | 2107/25000.0 [00:05<01:04, 354.42it/s]  9%|▉         | 2203/25000.0 [00:05<00:59, 381.50it/s]  9%|▉         | 2292/25000.0 [00:05<01:00, 378.28it/s] 10%|▉         | 2396/25000.0 [00:06<00:59, 382.83it/s] 10%|▉         | 2447/25000.0 [00:06<01:00, 374.72it/s] 10%|█         | 2583/25000.0 [00:06<00:55, 402.48it/s] 11%|█         | 2693/25000.0 [00:06<00:54, 405.69it/s] 11%|█         | 2742/25000.0 [00:07<00:59, 371.35it/s] 11%|█▏        | 2813/25000.0 [00:07<00:57, 388.24it/s] 12%|█▏        | 2904/25000.0 [00:07<00:54, 405.94it/s] 12%|█▏        | 3051/25000.0 [00:07<00:59, 367.04it/s] 13%|█▎        | 3159/25000.0 [00:08<00:55, 396.41it/s] 13%|█▎        | 3286/25000.0 [00:08<00:56, 386.79it/s] 13%|█▎        | 3330/25000.0 [00:08<00:55, 388.77it/s] 14%|█▍        | 3460/25000.0 [00:08<00:56, 377.97it/s] 14%|█▍        | 3560/25000.0 [00:09<00:58, 369.00it/s] 14%|█▍        | 3614/25000.0 [00:09<01:01, 349.28it/s] 15%|█▍        | 3735/25000.0 [00:09<00:57, 372.57it/s] 15%|█▌        | 3783/25000.0 [00:09<00:58, 360.52it/s] 16%|█▌        | 3908/25000.0 [00:10<00:55, 382.63it/s] 16%|█▌        | 3975/25000.0 [00:10<00:51, 412.08it/s] 16%|█▋        | 4075/25000.0 [00:10<00:48, 429.40it/s] 17%|█▋        | 4204/25000.0 [00:10<00:48, 432.47it/s] 17%|█▋        | 4312/25000.0 [00:10<00:47, 438.32it/s] 17%|█▋        | 4359/25000.0 [00:11<00:49, 418.04it/s] 18%|█▊        | 4454/25000.0 [00:11<01:03, 322.97it/s] 18%|█▊        | 4531/25000.0 [00:11<00:58, 347.98it/s] 18%|█▊        | 4607/25000.0 [00:12<01:01, 332.64it/s] 19%|█▊        | 4651/25000.0 [00:12<01:00, 338.12it/s] 19%|█▉        | 4751/25000.0 [00:12<00:58, 345.28it/s] 20%|█▉        | 4879/25000.0 [00:12<00:58, 346.13it/s] 20%|██        | 5020/25000.0 [00:13<00:57, 346.85it/s] 20%|██        | 5070/25000.0 [00:13<00:55, 356.73it/s] 21%|██        | 5135/25000.0 [00:13<00:55, 359.50it/s] 21%|██        | 5261/25000.0 [00:13<00:57, 345.13it/s] 21%|██▏       | 5340/25000.0 [00:14<00:57, 344.33it/s] 22%|██▏       | 5375/25000.0 [00:14<00:58, 335.93it/s] 22%|██▏       | 5421/25000.0 [00:14<00:59, 329.02it/s] 22%|██▏       | 5488/25000.0 [00:14<00:57, 341.00it/s] 22%|██▏       | 5563/25000.0 [00:14<00:56, 343.78it/s] 23%|██▎       | 5723/25000.0 [00:15<00:52, 368.06it/s] 23%|██▎       | 5815/25000.0 [00:15<01:00, 315.79it/s] 24%|██▎       | 5892/25000.0 [00:15<00:55, 343.45it/s] 24%|██▍       | 6037/25000.0 [00:15<00:49, 380.24it/s] 24%|██▍       | 6107/25000.0 [00:16<00:47, 394.72it/s] 25%|██▍       | 6246/25000.0 [00:16<00:48, 382.81it/s] 25%|██▌       | 6333/25000.0 [00:16<00:49, 374.06it/s] 26%|██▌       | 6473/25000.0 [00:17<00:46, 399.85it/s] 26%|██▋       | 6586/25000.0 [00:17<00:48, 377.08it/s] 27%|██▋       | 6745/25000.0 [00:17<00:45, 404.23it/s] 28%|██▊       | 6879/25000.0 [00:18<00:48, 374.86it/s] 28%|██▊       | 6931/25000.0 [00:18<00:47, 382.48it/s] 28%|██▊       | 6980/25000.0 [00:18<00:47, 380.61it/s] 29%|██▊       | 7128/25000.0 [00:18<00:48, 369.54it/s] 29%|██▉       | 7196/25000.0 [00:18<00:45, 387.24it/s] 30%|██▉       | 7386/25000.0 [00:19<00:48, 362.65it/s] 30%|██▉       | 7497/25000.0 [00:19<00:48, 361.00it/s] 31%|███       | 7660/25000.0 [00:20<00:43, 400.29it/s] 31%|███       | 7808/25000.0 [00:20<00:49, 349.75it/s] 32%|███▏      | 7941/25000.0 [00:21<00:49, 342.50it/s] 32%|███▏      | 7990/25000.0 [00:21<00:49, 343.99it/s] 32%|███▏      | 8111/25000.0 [00:21<00:50, 334.15it/s] 33%|███▎      | 8152/25000.0 [00:21<00:51, 327.74it/s] 33%|███▎      | 8194/25000.0 [00:21<00:50, 334.28it/s] 33%|███▎      | 8265/25000.0 [00:22<00:50, 331.02it/s] 34%|███▎      | 8411/25000.0 [00:22<00:50, 330.26it/s] 34%|███▍      | 8515/25000.0 [00:22<00:45, 361.40it/s] 34%|███▍      | 8568/25000.0 [00:22<00:44, 366.87it/s] 35%|███▍      | 8675/25000.0 [00:23<00:42, 380.73it/s] 35%|███▌      | 8775/25000.0 [00:23<00:42, 380.32it/s] 36%|███▌      | 8880/25000.0 [00:23<00:38, 418.93it/s] 36%|███▌      | 8977/25000.0 [00:23<00:41, 384.64it/s] 36%|███▌      | 9059/25000.0 [00:24<00:43, 368.30it/s] 36%|███▋      | 9112/25000.0 [00:24<00:39, 397.28it/s] 37%|███▋      | 9323/25000.0 [00:24<00:39, 398.01it/s] 38%|███▊      | 9422/25000.0 [00:25<00:36, 422.33it/s] 38%|███▊      | 9481/25000.0 [00:25<00:39, 392.29it/s] 38%|███▊      | 9524/25000.0 [00:25<00:42, 366.59it/s] 38%|███▊      | 9579/25000.0 [00:25<00:41, 370.76it/s] 39%|███▉      | 9691/25000.0 [00:25<00:38, 401.71it/s] 39%|███▉      | 9770/25000.0 [00:25<00:40, 372.44it/s] 39%|███▉      | 9853/25000.0 [00:26<00:37, 400.31it/s] 40%|███▉      | 9897/25000.0 [00:26<00:37, 398.75it/s] 40%|████      | 10044/25000.0 [00:26<00:41, 362.07it/s] 41%|████      | 10171/25000.0 [00:27<00:39, 376.80it/s] 41%|████      | 10218/25000.0 [00:27<00:39, 375.91it/s] 41%|████      | 10299/25000.0 [00:27<00:41, 358.28it/s] 42%|████▏     | 10420/25000.0 [00:27<00:37, 384.26it/s] 42%|████▏     | 10470/25000.0 [00:27<00:36, 398.82it/s] 42%|████▏     | 10525/25000.0 [00:27<00:36, 398.96it/s] 43%|████▎     | 10651/25000.0 [00:28<00:38, 373.38it/s] 43%|████▎     | 10746/25000.0 [00:28<00:39, 363.48it/s] 43%|████▎     | 10830/25000.0 [00:28<00:36, 383.40it/s] 44%|████▍     | 10978/25000.0 [00:29<00:38, 359.57it/s] 44%|████▍     | 11045/25000.0 [00:29<00:38, 359.47it/s] 44%|████▍     | 11091/25000.0 [00:29<00:37, 374.72it/s] 45%|████▍     | 11197/25000.0 [00:29<00:36, 377.45it/s] 45%|████▌     | 11326/25000.0 [00:30<00:35, 382.19it/s] 46%|████▌     | 11434/25000.0 [00:30<00:35, 383.85it/s] 46%|████▌     | 11539/25000.0 [00:30<00:33, 405.09it/s] 46%|████▋     | 11608/25000.0 [00:30<00:32, 408.06it/s] 47%|████▋     | 11710/25000.0 [00:31<00:31, 427.68it/s] 47%|████▋     | 11754/25000.0 [00:31<00:32, 412.51it/s] 47%|████▋     | 11831/25000.0 [00:31<00:32, 404.88it/s] 48%|████▊     | 11958/25000.0 [00:31<00:33, 392.31it/s] 48%|████▊     | 12014/25000.0 [00:31<00:35, 364.04it/s] 49%|████▊     | 12132/25000.0 [00:32<00:36, 351.72it/s] 49%|████▉     | 12245/25000.0 [00:32<00:35, 357.29it/s] 49%|████▉     | 12360/25000.0 [00:32<00:32, 389.42it/s] 50%|████▉     | 12482/25000.0 [00:33<00:31, 399.21it/s] 50%|█████     | 12532/25000.0 [00:33<00:29, 420.87it/s] 51%|█████     | 12674/25000.0 [00:33<00:31, 396.01it/s] 51%|█████     | 12783/25000.0 [00:34<00:39, 307.02it/s] 52%|█████▏    | 12896/25000.0 [00:34<00:36, 329.91it/s] 52%|█████▏    | 12986/25000.0 [00:34<00:34, 353.12it/s] 52%|█████▏    | 13043/25000.0 [00:34<00:34, 343.15it/s] 52%|█████▏    | 13096/25000.0 [00:35<00:35, 333.28it/s] 53%|█████▎    | 13187/25000.0 [00:35<00:34, 340.92it/s] 53%|█████▎    | 13332/25000.0 [00:35<00:30, 382.11it/s] 54%|█████▎    | 13437/25000.0 [00:35<00:30, 376.03it/s] 54%|█████▍    | 13564/25000.0 [00:36<00:28, 398.11it/s] 55%|█████▍    | 13643/25000.0 [00:36<00:28, 394.62it/s] 55%|█████▍    | 13693/25000.0 [00:36<00:27, 412.81it/s] 55%|█████▌    | 13758/25000.0 [00:36<00:26, 421.61it/s] 55%|█████▌    | 13830/25000.0 [00:36<00:27, 403.53it/s] 56%|█████▌    | 13999/25000.0 [00:37<00:25, 433.78it/s] 57%|█████▋    | 14138/25000.0 [00:37<00:26, 412.98it/s] 57%|█████▋    | 14252/25000.0 [00:37<00:26, 404.68it/s] 57%|█████▋    | 14336/25000.0 [00:37<00:27, 392.96it/s] 58%|█████▊    | 14383/25000.0 [00:38<00:27, 383.27it/s] 58%|█████▊    | 14458/25000.0 [00:38<00:26, 391.87it/s] 58%|█████▊    | 14564/25000.0 [00:38<00:25, 417.18it/s] 58%|█████▊    | 14624/25000.0 [00:38<00:26, 392.51it/s] 59%|█████▉    | 14750/25000.0 [00:38<00:25, 403.27it/s] 59%|█████▉    | 14844/25000.0 [00:39<00:27, 375.80it/s] 60%|█████▉    | 14952/25000.0 [00:39<00:27, 371.23it/s] 60%|█████▉    | 14990/25000.0 [00:39<00:27, 363.78it/s] 60%|██████    | 15036/25000.0 [00:39<00:26, 372.31it/s] 60%|██████    | 15096/25000.0 [00:39<00:25, 386.08it/s] 61%|██████    | 15182/25000.0 [00:40<00:24, 395.51it/s] 61%|██████    | 15232/25000.0 [00:40<00:24, 404.16it/s] 61%|██████▏   | 15358/25000.0 [00:40<00:24, 385.91it/s] 62%|██████▏   | 15492/25000.0 [00:41<00:25, 367.61it/s] 62%|██████▏   | 15539/25000.0 [00:41<00:24, 383.69it/s] 62%|██████▏   | 15589/25000.0 [00:41<00:25, 365.78it/s] 63%|██████▎   | 15662/25000.0 [00:41<00:24, 383.02it/s] 63%|██████▎   | 15756/25000.0 [00:41<00:24, 377.13it/s] 63%|██████▎   | 15813/25000.0 [00:41<00:24, 373.78it/s] 64%|██████▎   | 15934/25000.0 [00:42<00:22, 398.13it/s] 64%|██████▍   | 15984/25000.0 [00:42<00:21, 420.03it/s] 65%|██████▍   | 16127/25000.0 [00:42<00:21, 420.41it/s] 65%|██████▌   | 16271/25000.0 [00:43<00:27, 318.75it/s] 66%|██████▌   | 16395/25000.0 [00:43<00:24, 356.88it/s] 66%|██████▌   | 16470/25000.0 [00:43<00:21, 388.63it/s] 66%|██████▋   | 16584/25000.0 [00:43<00:20, 412.95it/s] 67%|██████▋   | 16730/25000.0 [00:44<00:20, 403.84it/s] 67%|██████▋   | 16792/25000.0 [00:44<00:21, 377.36it/s] 68%|██████▊   | 16890/25000.0 [00:44<00:23, 351.92it/s] 68%|██████▊   | 16951/25000.0 [00:44<00:22, 365.49it/s] 68%|██████▊   | 17058/25000.0 [00:45<00:20, 391.73it/s] 69%|██████▊   | 17141/25000.0 [00:45<00:21, 369.94it/s] 69%|██████▉   | 17212/25000.0 [00:45<00:20, 371.15it/s] 69%|██████▉   | 17287/25000.0 [00:45<00:18, 415.12it/s] 70%|██████▉   | 17438/25000.0 [00:46<00:18, 400.94it/s] 70%|███████   | 17506/25000.0 [00:46<00:18, 404.07it/s] 71%|███████   | 17638/25000.0 [00:46<00:18, 401.52it/s] 71%|███████   | 17680/25000.0 [00:46<00:18, 389.00it/s] 71%|███████   | 17732/25000.0 [00:46<00:18, 394.10it/s] 71%|███████▏  | 17864/25000.0 [00:47<00:19, 371.84it/s] 72%|███████▏  | 17905/25000.0 [00:47<00:18, 382.18it/s] 72%|███████▏  | 17955/25000.0 [00:47<00:18, 372.96it/s] 72%|███████▏  | 18099/25000.0 [00:47<00:18, 378.35it/s] 73%|███████▎  | 18178/25000.0 [00:48<00:18, 371.31it/s] 73%|███████▎  | 18229/25000.0 [00:48<00:17, 380.77it/s] 73%|███████▎  | 18369/25000.0 [00:48<00:16, 394.58it/s] 74%|███████▎  | 18423/25000.0 [00:48<00:16, 405.25it/s] 74%|███████▍  | 18495/25000.0 [00:48<00:16, 399.76it/s] 74%|███████▍  | 18622/25000.0 [00:49<00:15, 409.64it/s] 75%|███████▍  | 18718/25000.0 [00:49<00:14, 427.89it/s] 75%|███████▌  | 18795/25000.0 [00:49<00:14, 440.48it/s] 76%|███████▌  | 18885/25000.0 [00:49<00:15, 388.53it/s] 76%|███████▌  | 18993/25000.0 [00:50<00:14, 404.78it/s] 76%|███████▋  | 19078/25000.0 [00:50<00:15, 378.82it/s] 76%|███████▋  | 19118/25000.0 [00:50<00:15, 374.94it/s] 77%|███████▋  | 19189/25000.0 [00:50<00:15, 370.94it/s] 77%|███████▋  | 19305/25000.0 [00:50<00:14, 406.20it/s] 78%|███████▊  | 19465/25000.0 [00:51<00:13, 397.10it/s] 78%|███████▊  | 19582/25000.0 [00:51<00:14, 385.83it/s] 79%|███████▉  | 19718/25000.0 [00:51<00:12, 421.46it/s] 79%|███████▉  | 19781/25000.0 [00:52<00:13, 380.86it/s] 80%|███████▉  | 19916/25000.0 [00:52<00:12, 399.03it/s] 80%|███████▉  | 19959/25000.0 [00:52<00:13, 385.43it/s] 80%|████████  | 20011/25000.0 [00:52<00:13, 365.40it/s] 81%|████████  | 20192/25000.0 [00:53<00:13, 353.10it/s] 81%|████████▏ | 20334/25000.0 [00:53<00:15, 295.85it/s] 82%|████████▏ | 20378/25000.0 [00:53<00:14, 319.62it/s] 82%|████████▏ | 20560/25000.0 [00:54<00:12, 352.12it/s] 83%|████████▎ | 20681/25000.0 [00:54<00:11, 365.40it/s] 83%|████████▎ | 20729/25000.0 [00:54<00:11, 363.68it/s] 83%|████████▎ | 20799/25000.0 [00:54<00:10, 392.57it/s] 83%|████████▎ | 20842/25000.0 [00:55<00:10, 400.21it/s] 84%|████████▍ | 20956/25000.0 [00:55<00:10, 374.14it/s] 84%|████████▍ | 20996/25000.0 [00:55<00:10, 377.78it/s] 84%|████████▍ | 21057/25000.0 [00:55<00:10, 375.97it/s] 85%|████████▍ | 21133/25000.0 [00:55<00:10, 386.24it/s] 85%|████████▍ | 21208/25000.0 [00:56<00:09, 390.30it/s] 86%|████████▌ | 21375/25000.0 [00:56<00:09, 398.60it/s] 86%|████████▌ | 21509/25000.0 [00:56<00:08, 412.87it/s] 86%|████████▋ | 21592/25000.0 [00:56<00:07, 427.80it/s] 87%|████████▋ | 21732/25000.0 [00:57<00:07, 453.01it/s] 87%|████████▋ | 21855/25000.0 [00:57<00:07, 422.97it/s] 88%|████████▊ | 21939/25000.0 [00:57<00:08, 375.95it/s] 88%|████████▊ | 21986/25000.0 [00:57<00:07, 377.30it/s] 88%|████████▊ | 22094/25000.0 [00:58<00:07, 392.06it/s] 89%|████████▉ | 22235/25000.0 [00:58<00:06, 397.71it/s] 89%|████████▉ | 22374/25000.0 [00:58<00:06, 379.48it/s] 90%|█████████ | 22502/25000.0 [00:59<00:06, 369.26it/s] 90%|█████████ | 22576/25000.0 [00:59<00:06, 356.87it/s] 91%|█████████ | 22628/25000.0 [00:59<00:06, 384.87it/s] 91%|█████████ | 22775/25000.0 [00:59<00:05, 407.87it/s] 92%|█████████▏| 22920/25000.0 [01:00<00:05, 394.52it/s] 92%|█████████▏| 23012/25000.0 [01:00<00:05, 371.49it/s] 92%|█████████▏| 23096/25000.0 [01:00<00:05, 372.58it/s] 93%|█████████▎| 23177/25000.0 [01:01<00:05, 363.73it/s] 93%|█████████▎| 23267/25000.0 [01:01<00:04, 395.56it/s] 93%|█████████▎| 23347/25000.0 [01:01<00:04, 365.50it/s] 94%|█████████▍| 23440/25000.0 [01:01<00:04, 362.98it/s] 94%|█████████▍| 23508/25000.0 [01:01<00:04, 362.99it/s] 94%|█████████▍| 23584/25000.0 [01:02<00:03, 386.84it/s] 95%|█████████▍| 23745/25000.0 [01:02<00:03, 362.53it/s] 96%|█████████▌| 23901/25000.0 [01:02<00:02, 379.42it/s] 96%|█████████▌| 23942/25000.0 [01:03<00:02, 356.90it/s] 96%|█████████▌| 24058/25000.0 [01:03<00:02, 340.93it/s] 97%|█████████▋| 24191/25000.0 [01:03<00:02, 360.92it/s] 97%|█████████▋| 24282/25000.0 [01:04<00:01, 376.60it/s] 98%|█████████▊| 24412/25000.0 [01:04<00:01, 388.46it/s] 98%|█████████▊| 24478/25000.0 [01:04<00:01, 400.47it/s] 98%|█████████▊| 24540/25000.0 [01:04<00:01, 429.37it/s] 98%|█████████▊| 24592/25000.0 [01:04<00:00, 410.94it/s] 99%|█████████▊| 24662/25000.0 [01:04<00:00, 442.47it/s] 99%|█████████▉| 24746/25000.0 [01:05<00:00, 448.64it/s] 99%|█████████▉| 24874/25000.0 [01:05<00:00, 390.29it/s]100%|█████████▉| 24966/25000.0 [01:05<00:00, 370.63it/s]100%|█████████▉| 24966/25000.0 [01:06<00:00, 374.90it/s]
+  0%|          | 0/3000000 [00:00<?, ?it/s]2023-07-24 01:32:16.832272: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-07-24 01:32:17.879246: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8800
+2023-07-24 01:32:18.799335: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-07-24 01:32:18.799730: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-07-24 01:32:18.848483: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+2023-07-24 01:49:25.094613: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:49:26.782503: I tensorflow/core/profiler/lib/profiler_session.cc:126] Profiler session initializing.
+2023-07-24 01:49:26.782536: I tensorflow/core/profiler/lib/profiler_session.cc:141] Profiler session started.
+2023-07-24 01:49:26.783454: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-07-24 01:49:26.806662: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1611] Profiler found 1 GPUs
+2023-07-24 01:49:26.807019: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcupti.so.11.2'; dlerror: libcupti.so.11.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64:/usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64
+2023-07-24 01:49:26.807869: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcupti.so
+2023-07-24 01:49:26.810123: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session tear down.
+2023-07-24 01:49:26.810302: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1743] CUPTI activity buffer flushed
+2023-07-24 01:49:26.811502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-24 01:49:26.811534: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:49:26.816678: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-07-24 01:49:26.816738: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-07-24 01:49:26.818484: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2023-07-24 01:49:26.818774: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2023-07-24 01:49:26.819472: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2023-07-24 01:49:26.820362: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2023-07-24 01:49:26.820505: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-07-24 01:49:26.820859: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-07-24 01:49:26.821185: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-07-24 01:49:26.823609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-24 01:49:26.823904: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-07-24 01:49:26.823939: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:49:27.427792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-07-24 01:49:27.427840: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2023-07-24 01:49:27.427848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2023-07-24 01:49:27.428448: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14253 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A4000, pci bus id: 0000:d8:00.0, compute capability: 8.6)
+Parse Params file here from  config/manhattan32.json  and pass into main
+MAP: <src.Map.Map.Map object at 0x7f5ae54e3518>
+Model: "model_6"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+boolean_map_input (InputLayer)  [(None, 63, 63, 4)]  0                                            
+__________________________________________________________________________________________________
+tf.cast (TFOpLambda)            (None, 63, 63, 4)    0           boolean_map_input[0][0]          
+__________________________________________________________________________________________________
+float_map_input (InputLayer)    [(None, 63, 63, 2)]  0                                            
+__________________________________________________________________________________________________
+tf.concat (TFOpLambda)          (None, 63, 63, 6)    0           tf.cast[0][0]                    
+                                                                 float_map_input[0][0]            
+__________________________________________________________________________________________________
+average_pooling2d (AveragePooli (None, 21, 21, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.image.central_crop (TFOpLamb (None, 17, 17, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.stop_gradient (TFOpLambda)   (None, 21, 21, 6)    0           average_pooling2d[0][0]          
+__________________________________________________________________________________________________
+tf.stop_gradient_1 (TFOpLambda) (None, 17, 17, 6)    0           tf.image.central_crop[0][0]      
+__________________________________________________________________________________________________
+global_conv_1 (Conv2D)          (None, 17, 17, 16)   2416        tf.stop_gradient[0][0]           
+__________________________________________________________________________________________________
+local_conv_1 (Conv2D)           (None, 13, 13, 16)   2416        tf.stop_gradient_1[0][0]         
+__________________________________________________________________________________________________
+global_conv_2 (Conv2D)          (None, 13, 13, 16)   6416        global_conv_1[0][0]              
+__________________________________________________________________________________________________
+local_conv_2 (Conv2D)           (None, 9, 9, 16)     6416        local_conv_1[0][0]               
+__________________________________________________________________________________________________
+global_flatten (Flatten)        (None, 2704)         0           global_conv_2[0][0]              
+__________________________________________________________________________________________________
+local_flatten (Flatten)         (None, 1296)         0           local_conv_2[0][0]               
+__________________________________________________________________________________________________
+concat_flatten (Concatenate)    (None, 4000)         0           global_flatten[0][0]             
+                                                                 local_flatten[0][0]              
+__________________________________________________________________________________________________
+scalars_input (InputLayer)      [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+termination_input (InputLayer)  [(None,)]            0                                            
+__________________________________________________________________________________________________
+concat (Concatenate)            (None, 4001)         0           concat_flatten[0][0]             
+                                                                 scalars_input[0][0]              
+__________________________________________________________________________________________________
+tf.math.logical_not (TFOpLambda (None,)              0           termination_input[0][0]          
+__________________________________________________________________________________________________
+hidden_layer_all_0 (Dense)      (None, 256)          1024512     concat[0][0]                     
+__________________________________________________________________________________________________
+tf.cast_1 (TFOpLambda)          (None,)              0           tf.math.logical_not[0][0]        
+__________________________________________________________________________________________________
+hidden_layer_all_1 (Dense)      (None, 256)          65792       hidden_layer_all_0[0][0]         
+__________________________________________________________________________________________________
+q_star_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_2 (TFOpLambda) (None,)              0           tf.cast_1[0][0]                  
+__________________________________________________________________________________________________
+hidden_layer_all_2 (Dense)      (None, 256)          65792       hidden_layer_all_1[0][0]         
+__________________________________________________________________________________________________
+reward_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_3 (TFOpLambda) (None,)              0           q_star_input[0][0]               
+                                                                 tf.math.multiply_2[0][0]         
+__________________________________________________________________________________________________
+action_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+output_layer (Dense)            (None, 6)            1542        hidden_layer_all_2[0][0]         
+__________________________________________________________________________________________________
+tf.math.add (TFOpLambda)        (None,)              0           reward_input[0][0]               
+                                                                 tf.math.multiply_3[0][0]         
+__________________________________________________________________________________________________
+tf.one_hot_2 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.expand_dims (TFOpLambda)     (None, 1)            0           tf.math.add[0][0]                
+__________________________________________________________________________________________________
+tf.one_hot_1 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_1 (TFOpLambda) (None, 6)            0           output_layer[0][0]               
+                                                                 tf.one_hot_2[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_4 (TFOpLambda) (None, 6)            0           tf.expand_dims[0][0]             
+                                                                 tf.one_hot_1[0][0]               
+__________________________________________________________________________________________________
+tf.stop_gradient_4 (TFOpLambda) (None, 6)            0           tf.math.multiply_1[0][0]         
+__________________________________________________________________________________________________  0%|          | 0/25000.0 [00:00<?, ?it/s]  0%|          | 42/25000.0 [00:00<01:20, 311.39it/s]  0%|          | 85/25000.0 [00:00<01:14, 335.31it/s]  1%|          | 203/25000.0 [00:00<01:15, 330.25it/s]  1%|          | 263/25000.0 [00:00<01:14, 333.15it/s]  1%|▏         | 320/25000.0 [00:00<01:09, 355.77it/s]  2%|▏         | 455/25000.0 [00:01<01:05, 376.55it/s]  2%|▏         | 517/25000.0 [00:01<01:03, 388.11it/s]  2%|▏         | 591/25000.0 [00:01<01:02, 390.04it/s]  3%|▎         | 665/25000.0 [00:01<01:04, 376.10it/s]  3%|▎         | 732/25000.0 [00:01<01:02, 385.31it/s]  4%|▎         | 898/25000.0 [00:02<01:06, 364.81it/s]  4%|▍         | 962/25000.0 [00:02<01:02, 383.89it/s]  4%|▍         | 1005/25000.0 [00:02<01:04, 374.42it/s]  5%|▍         | 1136/25000.0 [00:02<00:59, 403.72it/s]  5%|▍         | 1230/25000.0 [00:03<01:02, 382.86it/s]  5%|▌         | 1352/25000.0 [00:03<01:03, 370.45it/s]  6%|▌         | 1401/25000.0 [00:03<01:06, 354.26it/s]  6%|▌         | 1555/25000.0 [00:04<01:06, 354.24it/s]  7%|▋         | 1702/25000.0 [00:04<01:05, 357.95it/s]  7%|▋         | 1833/25000.0 [00:04<01:00, 384.95it/s]  8%|▊         | 1929/25000.0 [00:05<01:08, 336.89it/s]  8%|▊         | 2070/25000.0 [00:05<01:04, 353.34it/s]  9%|▊         | 2162/25000.0 [00:05<00:58, 388.16it/s]  9%|▉         | 2215/25000.0 [00:05<00:58, 387.01it/s]  9%|▉         | 2309/25000.0 [00:06<00:58, 386.79it/s] 10%|▉         | 2416/25000.0 [00:06<01:01, 369.55it/s] 10%|█         | 2507/25000.0 [00:06<01:03, 353.39it/s] 11%|█         | 2666/25000.0 [00:07<01:05, 341.39it/s] 11%|█         | 2804/25000.0 [00:07<01:01, 358.77it/s] 12%|█▏        | 2931/25000.0 [00:08<01:05, 337.44it/s] 12%|█▏        | 3060/25000.0 [00:08<01:03, 345.84it/s] 13%|█▎        | 3229/25000.0 [00:08<00:57, 377.42it/s] 13%|█▎        | 3341/25000.0 [00:08<00:54, 400.05it/s] 14%|█▎        | 3415/25000.0 [00:09<00:53, 403.11it/s] 14%|█▍        | 3491/25000.0 [00:09<00:53, 404.20it/s] 14%|█▍        | 3581/25000.0 [00:09<00:55, 383.98it/s] 15%|█▍        | 3635/25000.0 [00:09<00:54, 389.75it/s] 15%|█▍        | 3704/25000.0 [00:09<00:53, 400.94it/s] 15%|█▌        | 3758/25000.0 [00:10<00:57, 371.89it/s] 15%|█▌        | 3853/25000.0 [00:10<00:57, 364.62it/s] 16%|█▌        | 3903/25000.0 [00:10<00:56, 374.90it/s] 16%|█▌        | 3995/25000.0 [00:10<00:53, 394.56it/s] 17%|█▋        | 4138/25000.0 [00:10<00:50, 414.33it/s] 17%|█▋        | 4264/25000.0 [00:11<00:49, 421.40it/s] 17%|█▋        | 4309/25000.0 [00:11<01:02, 330.48it/s] 18%|█▊        | 4429/25000.0 [00:11<00:55, 371.39it/s] 18%|█▊        | 4511/25000.0 [00:11<00:57, 354.58it/s] 18%|█▊        | 4620/25000.0 [00:12<00:54, 375.07it/s] 19%|█▉        | 4712/25000.0 [00:12<00:49, 405.77it/s] 19%|█▉        | 4762/25000.0 [00:12<00:51, 390.43it/s] 19%|█▉        | 4828/25000.0 [00:12<00:52, 386.55it/s] 19%|█▉        | 4870/25000.0 [00:12<00:54, 366.19it/s] 20%|█▉        | 4981/25000.0 [00:13<00:56, 356.93it/s] 21%|██        | 5185/25000.0 [00:13<00:49, 397.13it/s] 21%|██        | 5235/25000.0 [00:13<00:51, 385.28it/s] 21%|██▏       | 5328/25000.0 [00:13<00:50, 391.00it/s] 22%|██▏       | 5411/25000.0 [00:14<00:55, 355.29it/s] 22%|██▏       | 5464/25000.0 [00:14<00:54, 360.64it/s] 22%|██▏       | 5559/25000.0 [00:14<00:55, 348.68it/s] 22%|██▏       | 5596/25000.0 [00:14<00:55, 349.34it/s] 23%|██▎       | 5647/25000.0 [00:14<00:50, 380.60it/s] 23%|██▎       | 5697/25000.0 [00:14<00:49, 392.88it/s] 23%|██▎       | 5741/25000.0 [00:15<00:52, 364.42it/s] 23%|██▎       | 5848/25000.0 [00:15<00:50, 382.07it/s] 24%|██▎       | 5920/25000.0 [00:15<01:01, 308.18it/s] 24%|██▍       | 6041/25000.0 [00:16<00:58, 322.25it/s] 25%|██▍       | 6147/25000.0 [00:16<00:53, 350.22it/s] 25%|██▍       | 6198/25000.0 [00:16<00:53, 350.85it/s] 25%|██▌       | 6256/25000.0 [00:16<00:51, 364.53it/s] 25%|██▌       | 6321/25000.0 [00:16<00:51, 361.50it/s] 25%|██▌       | 6361/25000.0 [00:16<00:50, 366.55it/s] 26%|██▌       | 6465/25000.0 [00:17<00:49, 371.90it/s] 26%|██▌       | 6543/25000.0 [00:17<00:52, 353.60it/s] 27%|██▋       | 6663/25000.0 [00:17<00:53, 344.90it/s] 27%|██▋       | 6746/25000.0 [00:18<00:55, 326.33it/s] 27%|██▋       | 6782/25000.0 [00:18<00:55, 326.10it/s] 27%|██▋       | 6856/25000.0 [00:18<00:54, 333.07it/s] 28%|██▊       | 6940/25000.0 [00:18<00:54, 334.14it/s] 28%|██▊       | 7067/25000.0 [00:18<00:50, 357.78it/s] 29%|██▊       | 7131/25000.0 [00:19<00:53, 335.00it/s] 29%|██▉       | 7274/25000.0 [00:19<00:50, 348.65it/s] 30%|██▉       | 7412/25000.0 [00:19<00:51, 341.42it/s] 30%|███       | 7562/25000.0 [00:20<00:53, 325.22it/s] 31%|███       | 7710/25000.0 [00:20<00:54, 316.43it/s] 31%|███▏      | 7837/25000.0 [00:21<00:53, 321.98it/s] 32%|███▏      | 7976/25000.0 [00:21<00:50, 340.46it/s] 32%|███▏      | 8041/25000.0 [00:21<00:44, 381.25it/s] 33%|███▎      | 8129/25000.0 [00:21<00:43, 389.11it/s] 33%|███▎      | 8173/25000.0 [00:22<00:44, 378.49it/s] 34%|███▎      | 8392/25000.0 [00:22<00:39, 417.01it/s] 34%|███▍      | 8505/25000.0 [00:22<00:37, 439.63it/s] 34%|███▍      | 8612/25000.0 [00:22<00:38, 428.44it/s] 35%|███▍      | 8680/25000.0 [00:23<00:40, 404.96it/s] 35%|███▌      | 8763/25000.0 [00:23<00:38, 424.51it/s] 36%|███▌      | 8905/25000.0 [00:23<00:40, 394.10it/s] 36%|███▌      | 8963/25000.0 [00:23<00:40, 400.05it/s] 36%|███▌      | 9032/25000.0 [00:24<00:38, 414.00it/s] 36%|███▋      | 9108/25000.0 [00:24<00:41, 384.83it/s] 37%|███▋      | 9185/25000.0 [00:24<00:42, 368.01it/s] 37%|███▋      | 9225/25000.0 [00:24<00:42, 371.55it/s] 37%|███▋      | 9264/25000.0 [00:24<00:43, 362.33it/s] 38%|███▊      | 9391/25000.0 [00:25<00:42, 369.42it/s] 38%|███▊      | 9447/25000.0 [00:25<00:43, 359.80it/s] 38%|███▊      | 9513/25000.0 [00:25<00:45, 342.11it/s] 38%|███▊      | 9615/25000.0 [00:25<00:46, 331.03it/s] 39%|███▊      | 9667/25000.0 [00:25<00:45, 333.68it/s] 39%|███▉      | 9721/25000.0 [00:26<00:44, 346.09it/s] 39%|███▉      | 9784/25000.0 [00:26<00:40, 376.60it/s] 40%|███▉      | 9901/25000.0 [00:26<00:41, 361.69it/s] 40%|███▉      | 9986/25000.0 [00:26<00:51, 293.02it/s] 40%|████      | 10051/25000.0 [00:27<00:50, 296.67it/s] 40%|████      | 10112/25000.0 [00:27<00:43, 342.56it/s] 41%|████      | 10193/25000.0 [00:27<00:40, 362.99it/s] 41%|████      | 10260/25000.0 [00:27<00:38, 385.52it/s] 41%|████▏     | 10374/25000.0 [00:28<00:40, 360.10it/s] 42%|████▏     | 10446/25000.0 [00:28<00:39, 370.88it/s] 42%|████▏     | 10517/25000.0 [00:28<00:38, 380.92it/s] 42%|████▏     | 10576/25000.0 [00:28<00:37, 387.82it/s] 43%|████▎     | 10720/25000.0 [00:28<00:34, 412.07it/s] 43%|████▎     | 10790/25000.0 [00:29<00:34, 407.51it/s] 44%|████▎     | 10885/25000.0 [00:29<00:35, 395.03it/s] 44%|████▎     | 10934/25000.0 [00:29<00:36, 383.47it/s]2023-07-24 01:50:52.286523: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:50:53.954585: I tensorflow/core/profiler/lib/profiler_session.cc:126] Profiler session initializing.
+2023-07-24 01:50:53.954621: I tensorflow/core/profiler/lib/profiler_session.cc:141] Profiler session started.
+2023-07-24 01:50:53.955586: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-07-24 01:50:53.978962: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1611] Profiler found 1 GPUs
+2023-07-24 01:50:53.979328: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcupti.so.11.2'; dlerror: libcupti.so.11.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64:/usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64
+2023-07-24 01:50:53.980070: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcupti.so
+2023-07-24 01:50:53.982311: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session tear down.
+2023-07-24 01:50:53.982450: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1743] CUPTI activity buffer flushed
+2023-07-24 01:50:53.983788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-24 01:50:53.983816: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:50:53.988974: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-07-24 01:50:53.989032: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-07-24 01:50:53.990901: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2023-07-24 01:50:53.991191: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2023-07-24 01:50:53.991828: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2023-07-24 01:50:53.992664: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2023-07-24 01:50:53.992798: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-07-24 01:50:53.993145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-07-24 01:50:53.993452: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-07-24 01:50:53.996136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-07-24 01:50:53.996427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-07-24 01:50:53.996461: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-24 01:50:54.596955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-07-24 01:50:54.597003: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2023-07-24 01:50:54.597011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2023-07-24 01:50:54.597603: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14253 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A4000, pci bus id: 0000:d8:00.0, compute capability: 8.6)
+Parse Params file here from  config/urban50.json  and pass into main
+MAP: <src.Map.Map.Map object at 0x7f1ab4d10b00>
+Model: "model_6"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+boolean_map_input (InputLayer)  [(None, 99, 99, 4)]  0                                            
+__________________________________________________________________________________________________
+tf.cast (TFOpLambda)            (None, 99, 99, 4)    0           boolean_map_input[0][0]          
+__________________________________________________________________________________________________
+float_map_input (InputLayer)    [(None, 99, 99, 2)]  0                                            
+__________________________________________________________________________________________________
+tf.concat (TFOpLambda)          (None, 99, 99, 6)    0           tf.cast[0][0]                    
+                                                                 float_map_input[0][0]            
+__________________________________________________________________________________________________
+average_pooling2d (AveragePooli (None, 19, 19, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.image.central_crop (TFOpLamb (None, 17, 17, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.stop_gradient (TFOpLambda)   (None, 19, 19, 6)    0           average_pooling2d[0][0]          
+__________________________________________________________________________________________________
+tf.stop_gradient_1 (TFOpLambda) (None, 17, 17, 6)    0           tf.image.central_crop[0][0]      
+__________________________________________________________________________________________________
+global_conv_1 (Conv2D)          (None, 15, 15, 16)   2416        tf.stop_gradient[0][0]           
+__________________________________________________________________________________________________
+local_conv_1 (Conv2D)           (None, 13, 13, 16)   2416        tf.stop_gradient_1[0][0]         
+__________________________________________________________________________________________________
+global_conv_2 (Conv2D)          (None, 11, 11, 16)   6416        global_conv_1[0][0]              
+__________________________________________________________________________________________________
+local_conv_2 (Conv2D)           (None, 9, 9, 16)     6416        local_conv_1[0][0]               
+__________________________________________________________________________________________________
+global_flatten (Flatten)        (None, 1936)         0           global_conv_2[0][0]              
+__________________________________________________________________________________________________
+local_flatten (Flatten)         (None, 1296)         0           local_conv_2[0][0]               
+__________________________________________________________________________________________________
+concat_flatten (Concatenate)    (None, 3232)         0           global_flatten[0][0]             
+                                                                 local_flatten[0][0]              
+__________________________________________________________________________________________________
+scalars_input (InputLayer)      [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+termination_input (InputLayer)  [(None,)]            0                                            
+__________________________________________________________________________________________________
+concat (Concatenate)            (None, 3233)         0           concat_flatten[0][0]             
+                                                                 scalars_input[0][0]              
+__________________________________________________________________________________________________
+tf.math.logical_not (TFOpLambda (None,)              0           termination_input[0][0]          
+__________________________________________________________________________________________________
+hidden_layer_all_0 (Dense)      (None, 256)          827904      concat[0][0]                     
+__________________________________________________________________________________________________
+tf.cast_1 (TFOpLambda)          (None,)              0           tf.math.logical_not[0][0]        
+__________________________________________________________________________________________________
+hidden_layer_all_1 (Dense)      (None, 256)          65792       hidden_layer_all_0[0][0]         
+__________________________________________________________________________________________________
+q_star_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_2 (TFOpLambda) (None,)              0           tf.cast_1[0][0]                  
+__________________________________________________________________________________________________
+hidden_layer_all_2 (Dense)      (None, 256)          65792       hidden_layer_all_1[0][0]         
+__________________________________________________________________________________________________
+reward_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_3 (TFOpLambda) (None,)              0           q_star_input[0][0]               
+                                                                 tf.math.multiply_2[0][0]         
+__________________________________________________________________________________________________
+action_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+output_layer (Dense)            (None, 6)            1542        hidden_layer_all_2[0][0]         
+__________________________________________________________________________________________________
+tf.math.add (TFOpLambda)        (None,)              0           reward_input[0][0]               
+                                                                 tf.math.multiply_3[0][0]         
+__________________________________________________________________________________________________
+tf.one_hot_2 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.expand_dims (TFOpLambda)     (None, 1)            0           tf.math.add[0][0]                
+__________________________________________________________________________________________________
+tf.one_hot_1 (TFOpLambda)       (None, 6)            0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_1 (TFOpLambda) (None, 6)            0           output_layer[0][0]               
+                                                                 tf.one_hot_2[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_4 (TFOpLambda) (None, 6)            0           tf.expand_dims[0][0]             
+                                                                 tf.one_hot_1[0][0]               
+__________________________________________________________________________________________________
+tf.stop_gradient_4 (TFOpLambda) (None, 6)            0           tf.math.multiply_1[0][0]         
+__________________________________________________________________________________________________  0%|          | 0/25000.0 [00:00<?, ?it/s]  0%|          | 39/25000.0 [00:00<01:13, 340.40it/s]  1%|          | 169/25000.0 [00:00<01:16, 323.93it/s]  1%|          | 200/25000.0 [00:00<01:17, 319.28it/s]  1%|          | 252/25000.0 [00:00<01:14, 333.41it/s]  1%|          | 282/25000.0 [00:00<01:16, 322.44it/s]  1%|▏         | 320/25000.0 [00:01<01:16, 320.78it/s]  2%|▏         | 379/25000.0 [00:01<01:19, 308.98it/s]  2%|▏         | 436/25000.0 [00:01<01:23, 295.90it/s]  2%|▏         | 477/25000.0 [00:01<01:21, 300.30it/s]  2%|▏         | 552/25000.0 [00:01<01:20, 302.43it/s]  3%|▎         | 691/25000.0 [00:02<01:19, 305.86it/s]  3%|▎         | 794/25000.0 [00:02<01:15, 320.07it/s]  4%|▍         | 939/25000.0 [00:03<01:16, 316.54it/s]  4%|▍         | 1013/25000.0 [00:03<01:12, 331.07it/s]  5%|▍         | 1127/25000.0 [00:03<01:11, 331.87it/s]  5%|▌         | 1251/25000.0 [00:03<01:09, 341.53it/s]  6%|▌         | 1391/25000.0 [00:04<01:10, 333.41it/s]  6%|▌         | 1496/25000.0 [00:04<01:09, 338.66it/s]  7%|▋         | 1694/25000.0 [00:05<01:10, 329.91it/s]  7%|▋         | 1788/25000.0 [00:05<01:07, 343.82it/s]  8%|▊         | 1972/25000.0 [00:06<01:08, 336.24it/s]  8%|▊         | 2107/25000.0 [00:06<01:09, 328.23it/s]  9%|▉         | 2288/25000.0 [00:07<01:08, 333.19it/s]  9%|▉         | 2326/25000.0 [00:07<01:07, 333.88it/s] 10%|▉         | 2479/25000.0 [00:07<01:07, 333.44it/s] 10%|█         | 2520/25000.0 [00:07<01:08, 330.32it/s] 10%|█         | 2579/25000.0 [00:07<01:10, 320.11it/s] 10%|█         | 2617/25000.0 [00:08<01:10, 318.61it/s] 11%|█         | 2651/25000.0 [00:08<01:09, 319.84it/s] 11%|█         | 2691/25000.0 [00:08<01:07, 330.87it/s] 11%|█         | 2783/25000.0 [00:08<01:06, 333.70it/s] 11%|█▏        | 2846/25000.0 [00:08<01:04, 343.15it/s] 12%|█▏        | 3015/25000.0 [00:09<01:12, 304.95it/s] 13%|█▎        | 3200/25000.0 [00:10<01:10, 309.68it/s] 13%|█▎        | 3242/25000.0 [00:10<01:11, 303.98it/s] 13%|█▎        | 3276/25000.0 [00:10<01:13, 297.53it/s] 13%|█▎        | 3333/25000.0 [00:10<01:10, 308.82it/s] 14%|█▎        | 3435/25000.0 [00:10<01:12, 298.15it/s] 14%|█▍        | 3482/25000.0 [00:10<01:14, 289.37it/s] 15%|█▍        | 3665/25000.0 [00:11<01:11, 299.89it/s] 15%|█▍        | 3728/25000.0 [00:11<01:10, 302.64it/s] 16%|█▌        | 3992/25000.0 [00:12<01:04, 325.76it/s] 17%|█▋        | 4187/25000.0 [00:13<01:06, 312.91it/s] 17%|█▋        | 4363/25000.0 [00:13<01:03, 323.22it/s] 18%|█▊        | 4437/25000.0 [00:13<01:01, 332.10it/s] 18%|█▊        | 4493/25000.0 [00:13<00:59, 345.15it/s] 18%|█▊        | 4550/25000.0 [00:14<01:04, 318.77it/s] 18%|█▊        | 4586/25000.0 [00:14<01:06, 307.35it/s] 19%|█▉        | 4747/25000.0 [00:14<01:05, 307.26it/s] 19%|█▉        | 4836/25000.0 [00:15<01:01, 327.01it/s] 20%|█▉        | 4887/25000.0 [00:15<01:03, 318.03it/s] 20%|█▉        | 4923/25000.0 [00:15<01:03, 317.08it/s] 20%|██        | 5075/25000.0 [00:15<01:04, 308.46it/s] 20%|██        | 5108/25000.0 [00:15<01:04, 307.34it/s] 21%|██        | 5293/25000.0 [00:16<01:00, 324.65it/s] 22%|██▏       | 5481/25000.0 [00:17<01:02, 313.16it/s] 22%|██▏       | 5584/25000.0 [00:17<00:58, 331.90it/s] 23%|██▎       | 5670/25000.0 [00:17<01:08, 281.93it/s] 23%|██▎       | 5852/25000.0 [00:18<01:04, 298.78it/s] 24%|██▎       | 5888/25000.0 [00:18<01:06, 288.14it/s] 24%|██▍       | 5966/25000.0 [00:18<01:01, 311.16it/s] 25%|██▍       | 6178/25000.0 [00:19<01:01, 307.70it/s] 25%|██▍       | 6233/25000.0 [00:19<01:00, 308.96it/s] 26%|██▌       | 6404/25000.0 [00:20<00:58, 320.58it/s] 26%|██▌       | 6446/25000.0 [00:20<00:57, 322.61it/s] 26%|██▌       | 6484/25000.0 [00:20<00:59, 308.94it/s] 26%|██▋       | 6584/25000.0 [00:20<01:01, 300.58it/s] 27%|██▋       | 6628/25000.0 [00:20<00:57, 318.69it/s] 27%|██▋       | 6753/25000.0 [00:21<00:59, 306.75it/s] 27%|██▋       | 6800/25000.0 [00:21<00:56, 320.67it/s] 28%|██▊       | 6987/25000.0 [00:21<00:54, 328.64it/s] 28%|██▊       | 7024/25000.0 [00:21<00:54, 326.97it/s] 28%|██▊       | 7076/25000.0 [00:22<00:56, 319.66it/s] 28%|██▊       | 7113/25000.0 [00:22<00:56, 317.60it/s] 29%|██▊       | 7149/25000.0 [00:22<00:57, 308.66it/s] 29%|██▊       | 7187/25000.0 [00:22<00:55, 323.25it/s] 29%|██▉       | 7258/25000.0 [00:22<00:55, 320.78it/s] 29%|██▉       | 7300/25000.0 [00:22<00:56, 314.52it/s] 30%|██▉       | 7446/25000.0 [00:23<01:04, 270.86it/s] 30%|██▉       | 7481/25000.0 [00:23<01:02, 279.64it/s] 30%|███       | 7520/25000.0 [00:23<01:00, 290.34it/s] 31%|███       | 7684/25000.0 [00:24<00:56, 307.41it/s] 31%|███       | 7791/25000.0 [00:24<00:56, 305.86it/s] 31%|███▏      | 7827/25000.0 [00:24<00:57, 299.44it/s] 32%|███▏      | 8035/25000.0 [00:25<00:53, 316.95it/s] 33%|███▎      | 8228/25000.0 [00:25<00:53, 313.73it/s] 33%|███▎      | 8266/25000.0 [00:26<00:50, 329.65it/s] 33%|███▎      | 8300/25000.0 [00:26<00:52, 318.43it/s] 33%|███▎      | 8361/25000.0 [00:26<00:52, 319.94it/s] 34%|███▍      | 8443/25000.0 [00:26<00:51, 322.35it/s] 34%|███▍      | 8547/25000.0 [00:26<00:51, 322.28it/s]2023-08-21 10:18:27.443096: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-08-21 10:18:29.160207: I tensorflow/core/profiler/lib/profiler_session.cc:126] Profiler session initializing.
+2023-08-21 10:18:29.160251: I tensorflow/core/profiler/lib/profiler_session.cc:141] Profiler session started.
+2023-08-21 10:18:29.161226: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-08-21 10:18:29.184851: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1611] Profiler found 1 GPUs
+2023-08-21 10:18:29.185242: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcupti.so.11.2'; dlerror: libcupti.so.11.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64:/usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64
+2023-08-21 10:18:29.186121: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcupti.so
+2023-08-21 10:18:29.188522: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session tear down.
+2023-08-21 10:18:29.188676: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1743] CUPTI activity buffer flushed
+2023-08-21 10:18:29.190123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-08-21 10:18:29.190162: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-08-21 10:18:29.195517: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-08-21 10:18:29.195586: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-08-21 10:18:29.197465: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2023-08-21 10:18:29.197788: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2023-08-21 10:18:29.198545: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2023-08-21 10:18:29.199501: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2023-08-21 10:18:29.199659: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-08-21 10:18:29.200045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-08-21 10:18:29.200392: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-21 10:18:29.203019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-08-21 10:18:29.203335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-08-21 10:18:29.203382: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-08-21 10:18:29.794678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-08-21 10:18:29.794737: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2023-08-21 10:18:29.794749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2023-08-21 10:18:29.795401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14253 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A4000, pci bus id: 0000:3b:00.0, compute capability: 8.6)
+Parse Params file here from  config/manhattan32.json  and pass into main
+size: 32
+trap: [[28 20]]
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+Model: "model_6"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+boolean_map_input (InputLayer)  [(None, 63, 63, 5)]  0                                            
+__________________________________________________________________________________________________
+tf.cast (TFOpLambda)            (None, 63, 63, 5)    0           boolean_map_input[0][0]          
+__________________________________________________________________________________________________
+float_map_input (InputLayer)    [(None, 63, 63, 2)]  0                                            
+__________________________________________________________________________________________________
+tf.concat (TFOpLambda)          (None, 63, 63, 7)    0           tf.cast[0][0]                    
+                                                                 float_map_input[0][0]            
+__________________________________________________________________________________________________
+average_pooling2d (AveragePooli (None, 21, 21, 7)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.image.central_crop (TFOpLamb (None, 17, 17, 7)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.stop_gradient (TFOpLambda)   (None, 21, 21, 7)    0           average_pooling2d[0][0]          
+__________________________________________________________________________________________________
+tf.stop_gradient_1 (TFOpLambda) (None, 17, 17, 7)    0           tf.image.central_crop[0][0]      
+__________________________________________________________________________________________________
+global_conv_1 (Conv2D)          (None, 17, 17, 16)   2816        tf.stop_gradient[0][0]           
+__________________________________________________________________________________________________
+local_conv_1 (Conv2D)           (None, 13, 13, 16)   2816        tf.stop_gradient_1[0][0]         
+__________________________________________________________________________________________________
+global_conv_2 (Conv2D)          (None, 13, 13, 16)   6416        global_conv_1[0][0]              
+__________________________________________________________________________________________________
+local_conv_2 (Conv2D)           (None, 9, 9, 16)     6416        local_conv_1[0][0]               
+__________________________________________________________________________________________________
+global_flatten (Flatten)        (None, 2704)         0           global_conv_2[0][0]              
+__________________________________________________________________________________________________
+local_flatten (Flatten)         (None, 1296)         0           local_conv_2[0][0]               
+__________________________________________________________________________________________________
+concat_flatten (Concatenate)    (None, 4000)         0           global_flatten[0][0]             
+                                                                 local_flatten[0][0]              
+__________________________________________________________________________________________________
+scalars_input (InputLayer)      [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+termination_input (InputLayer)  [(None,)]            0                                            
+__________________________________________________________________________________________________
+concat (Concatenate)            (None, 4001)         0           concat_flatten[0][0]             
+                                                                 scalars_input[0][0]              
+__________________________________________________________________________________________________
+tf.math.logical_not (TFOpLambda (None,)              0           termination_input[0][0]          
+__________________________________________________________________________________________________
+hidden_layer_all_0 (Dense)      (None, 256)          1024512     concat[0][0]                     
+__________________________________________________________________________________________________
+tf.cast_1 (TFOpLambda)          (None,)              0           tf.math.logical_not[0][0]        
+__________________________________________________________________________________________________
+hidden_layer_all_1 (Dense)      (None, 256)          65792       hidden_layer_all_0[0][0]         
+__________________________________________________________________________________________________
+q_star_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_2 (TFOpLambda) (None,)              0           tf.cast_1[0][0]                  
+__________________________________________________________________________________________________
+hidden_layer_all_2 (Dense)      (None, 256)          65792       hidden_layer_all_1[0][0]         
+__________________________________________________________________________________________________
+reward_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_3 (TFOpLambda) (None,)              0           q_star_input[0][0]               
+                                                                 tf.math.multiply_2[0][0]         
+__________________________________________________________________________________________________
+action_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+output_layer (Dense)            (None, 10)           2570        hidden_layer_all_2[0][0]         
+__________________________________________________________________________________________________
+tf.math.add (TFOpLambda)        (None,)              0           reward_input[0][0]               
+                                                                 tf.math.multiply_3[0][0]         
+__________________________________________________________________________________________________
+tf.one_hot_2 (TFOpLambda)       (None, 10)           0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.expand_dims (TFOpLambda)     (None, 1)            0           tf.math.add[0][0]                
+__________________________________________________________________________________________________
+tf.one_hot_1 (TFOpLambda)       (None, 10)           0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_1 (TFOpLambda) (None, 10)           0           output_layer[0][0]               
+                                                                 tf.one_hot_2[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_4 (TFOpLambda) (None, 10)           0           tf.expand_dims[0][0]             
+                                                                 tf.one_hot_1[0][0]               
+__________________________________________________________________________________________________
+tf.stop_gradient_4 (TFOpLambda) (None, 10)           0           tf.math.multiply_1[0][0]           0%|          | 0/25000.0 [00:00<?, ?it/s]  0%|          | 3/25000.0 [00:13<32:03:58,  4.62s/it]  0%|          | 74/25000.0 [00:14<22:23:15,  3.23s/it]  1%|          | 178/25000.0 [00:14<15:36:37,  2.26s/it]  1%|          | 241/25000.0 [00:14<10:54:18,  1.59s/it]  1%|          | 310/25000.0 [00:14<7:37:06,  1.11s/it]   2%|▏         | 392/25000.0 [00:14<5:19:11,  1.28it/s]  2%|▏         | 501/25000.0 [00:15<3:42:44,  1.83it/s]  2%|▏         | 611/25000.0 [00:15<2:35:34,  2.61it/s]  3%|▎         | 821/25000.0 [00:15<1:48:14,  3.72it/s]  4%|▎         | 880/25000.0 [00:16<1:15:56,  5.29it/s]  4%|▍         | 993/25000.0 [00:16<53:24,  7.49it/s]    4%|▍         | 1046/25000.0 [00:16<37:41, 10.59it/s]  5%|▍         | 1129/25000.0 [00:16<26:38, 14.93it/s]  5%|▍         | 1227/25000.0 [00:17<18:56, 20.91it/s]  5%|▌         | 1292/25000.0 [00:17<13:32, 29.19it/s]  5%|▌         | 1362/25000.0 [00:17<09:48, 40.15it/s]  6%|▌         | 1430/25000.0 [00:17<07:06, 55.32it/s]  6%|▌         | 1546/25000.0 [00:18<05:17, 73.89it/s]  7%|▋         | 1672/25000.0 [00:18<03:58, 97.90it/s]  7%|▋         | 1827/25000.0 [00:19<03:14, 119.06it/s]  8%|▊         | 2051/25000.0 [00:19<02:28, 154.02it/s]  8%|▊         | 2090/25000.0 [00:19<02:05, 182.64it/s]  9%|▉         | 2199/25000.0 [00:19<01:41, 223.76it/s]  9%|▉         | 2365/25000.0 [00:20<01:36, 235.51it/s] 10%|█         | 2509/25000.0 [00:20<01:24, 267.35it/s] 11%|█         | 2719/25000.0 [00:21<01:16, 289.36it/s] 11%|█         | 2778/25000.0 [00:21<01:14, 300.28it/s][I 2023-11-14 15:21:43.132 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-11-14 15:21:43.161 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[W 2023-11-14 15:21:43.163 LabApp] 'allow_remote_access' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-11-14 15:21:43.163 LabApp] 'allow_credentials' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-11-14 15:21:43.163 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-11-14 15:21:43.163 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-11-14 15:21:43.163 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-11-14 15:21:43.163 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-11-14 15:21:43.166 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-11-14 15:21:43.170 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-11-14 15:21:43.350 ServerApp] notebook_shim | extension was successfully linked.
+[W 2023-11-14 15:21:43.361 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 2023-11-14 15:21:43.363 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-11-14 15:21:43.363 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-11-14 15:21:43.363 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /data/wangtingqi/RL/update_1024/uav_update
+[I 2023-11-14 15:21:43.363 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/wangtingqi/.local/share/jupyter/file_id_manager.db
+[I 2023-11-14 15:21:43.364 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-11-14 15:21:43.364 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2023-11-14 15:21:43.364 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2023-11-14 15:21:43.365 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2023-11-14 15:21:43.366 LabApp] JupyterLab extension loaded from /home/wangtingqi/data/envs/pytorch/lib/python3.7/site-packages/jupyterlab
+[I 2023-11-14 15:21:43.366 LabApp] JupyterLab application directory is /data/wangtingqi/envs/pytorch/share/jupyter/lab
+[I 2023-11-14 15:21:43.368 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-11-14 15:21:43.371 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-11-14 15:21:43.372 ServerApp] Serving notebooks from local directory: /data/wangtingqi/RL/update_1024/uav_update
+[I 2023-11-14 15:21:43.372 ServerApp] Jupyter Server 1.24.0 is running at:
+[I 2023-11-14 15:21:43.372 ServerApp] http://localhost:8989/lab
+[I 2023-11-14 15:21:43.372 ServerApp]  or http://127.0.0.1:8989/lab
+[I 2023-11-14 15:21:43.372 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).

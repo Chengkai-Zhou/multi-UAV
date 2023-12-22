@@ -1,0 +1,123 @@
+nohup: ignoring input
+2023-11-04 19:30:37.764975: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-11-04 19:30:39.519727: I tensorflow/core/profiler/lib/profiler_session.cc:126] Profiler session initializing.
+2023-11-04 19:30:39.519777: I tensorflow/core/profiler/lib/profiler_session.cc:141] Profiler session started.
+2023-11-04 19:30:39.520855: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-11-04 19:30:39.543427: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1611] Profiler found 1 GPUs
+2023-11-04 19:30:39.543798: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcupti.so.11.2'; dlerror: libcupti.so.11.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64:/usr/local/TensorRT-7.2.3.4/lib:/usr/local/cudnn-linux-x86_64-8.8.0.121_cuda11-archive/lib:/usr/local/cuda-11.7/extras/CUPTI/lib64:/usr/local/cuda-11.7/lib64
+2023-11-04 19:30:39.544675: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcupti.so
+2023-11-04 19:30:39.547159: I tensorflow/core/profiler/lib/profiler_session.cc:159] Profiler session tear down.
+2023-11-04 19:30:39.547313: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1743] CUPTI activity buffer flushed
+2023-11-04 19:30:39.548579: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-11-04 19:30:39.548612: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-11-04 19:30:39.554431: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-11-04 19:30:39.554495: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-11-04 19:30:39.556119: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2023-11-04 19:30:39.556439: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2023-11-04 19:30:39.557214: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2023-11-04 19:30:39.558265: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2023-11-04 19:30:39.558447: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-11-04 19:30:39.558813: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-11-04 19:30:39.559145: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-04 19:30:39.563237: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: NVIDIA RTX A4000 computeCapability: 8.6
+coreClock: 1.56GHz coreCount: 48 deviceMemorySize: 15.73GiB deviceMemoryBandwidth: 417.29GiB/s
+2023-11-04 19:30:39.563539: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2023-11-04 19:30:39.563580: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-11-04 19:30:40.177115: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-11-04 19:30:40.177186: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2023-11-04 19:30:40.177198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2023-11-04 19:30:40.177861: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14253 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A4000, pci bus id: 0000:3b:00.0, compute capability: 8.6)
+Parse Params file here from  config/urban50.json  and pass into main
+size: 50
+Model: "model_6"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+boolean_map_input (InputLayer)  [(None, 99, 99, 4)]  0                                            
+__________________________________________________________________________________________________
+tf.cast (TFOpLambda)            (None, 99, 99, 4)    0           boolean_map_input[0][0]          
+__________________________________________________________________________________________________
+float_map_input (InputLayer)    [(None, 99, 99, 2)]  0                                            
+__________________________________________________________________________________________________
+tf.concat (TFOpLambda)          (None, 99, 99, 6)    0           tf.cast[0][0]                    
+                                                                 float_map_input[0][0]            
+__________________________________________________________________________________________________
+average_pooling2d (AveragePooli (None, 19, 19, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.image.central_crop (TFOpLamb (None, 17, 17, 6)    0           tf.concat[0][0]                  
+__________________________________________________________________________________________________
+tf.stop_gradient (TFOpLambda)   (None, 19, 19, 6)    0           average_pooling2d[0][0]          
+__________________________________________________________________________________________________
+tf.stop_gradient_1 (TFOpLambda) (None, 17, 17, 6)    0           tf.image.central_crop[0][0]      
+__________________________________________________________________________________________________
+global_conv_1 (Conv2D)          (None, 15, 15, 16)   2416        tf.stop_gradient[0][0]           
+__________________________________________________________________________________________________
+local_conv_1 (Conv2D)           (None, 13, 13, 16)   2416        tf.stop_gradient_1[0][0]         
+__________________________________________________________________________________________________
+global_conv_2 (Conv2D)          (None, 11, 11, 16)   6416        global_conv_1[0][0]              
+__________________________________________________________________________________________________
+local_conv_2 (Conv2D)           (None, 9, 9, 16)     6416        local_conv_1[0][0]               
+__________________________________________________________________________________________________
+global_flatten (Flatten)        (None, 1936)         0           global_conv_2[0][0]              
+__________________________________________________________________________________________________
+local_flatten (Flatten)         (None, 1296)         0           local_conv_2[0][0]               
+__________________________________________________________________________________________________
+concat_flatten (Concatenate)    (None, 3232)         0           global_flatten[0][0]             
+                                                                 local_flatten[0][0]              
+__________________________________________________________________________________________________
+scalars_input (InputLayer)      [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+termination_input (InputLayer)  [(None,)]            0                                            
+__________________________________________________________________________________________________
+concat (Concatenate)            (None, 3233)         0           concat_flatten[0][0]             
+                                                                 scalars_input[0][0]              
+__________________________________________________________________________________________________
+tf.math.logical_not (TFOpLambda (None,)              0           termination_input[0][0]          
+__________________________________________________________________________________________________
+hidden_layer_all_0 (Dense)      (None, 256)          827904      concat[0][0]                     
+__________________________________________________________________________________________________
+tf.cast_1 (TFOpLambda)          (None,)              0           tf.math.logical_not[0][0]        
+__________________________________________________________________________________________________
+hidden_layer_all_1 (Dense)      (None, 256)          65792       hidden_layer_all_0[0][0]         
+__________________________________________________________________________________________________
+q_star_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_2 (TFOpLambda) (None,)              0           tf.cast_1[0][0]                  
+__________________________________________________________________________________________________
+hidden_layer_all_2 (Dense)      (None, 256)          65792       hidden_layer_all_1[0][0]         
+__________________________________________________________________________________________________
+reward_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+tf.math.multiply_3 (TFOpLambda) (None,)              0           q_star_input[0][0]               
+                                                                 tf.math.multiply_2[0][0]         
+__________________________________________________________________________________________________
+action_input (InputLayer)       [(None,)]            0                                            
+__________________________________________________________________________________________________
+output_layer (Dense)            (None, 12)           3084        hidden_layer_all_2[0][0]         
+__________________________________________________________________________________________________
+tf.math.add (TFOpLambda)        (None,)              0           reward_input[0][0]               
+                                                                 tf.math.multiply_3[0][0]         
+__________________________________________________________________________________________________
+tf.one_hot_2 (TFOpLambda)       (None, 12)           0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.expand_dims (TFOpLambda)     (None, 1)            0           tf.math.add[0][0]                
+__________________________________________________________________________________________________
+tf.one_hot_1 (TFOpLambda)       (None, 12)           0           action_input[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_1 (TFOpLambda) (None, 12)           0           output_layer[0][0]               
+                                                                 tf.one_hot_2[0][0]               
+__________________________________________________________________________________________________
+tf.math.multiply_4 (TFOpLambda) (None, 12)           0           tf.expand_dims[0][0]             
+                                                                 tf.one_hot_1[0][0]               
+__________________________________________________________________________________________________
+tf.stop_gradient_4 (TFOpLambda) (None, 12)           0           tf.math.multiply_1[0][0]         
+__________________________________________________________________________________________________  0%|          | 0/25000.0 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s][A2023-11-04 19:30:40.896848: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-11-04 19:30:42.237227: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8800
+2023-11-04 19:30:43.515844: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-11-04 19:30:43.516338: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-11-04 19:30:43.544916: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
